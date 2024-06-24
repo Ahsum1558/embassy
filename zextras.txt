@@ -923,3 +923,29 @@ $convertedAmount = $currencyExchangeService->convert($transactionAmount, $transa
 $userCurrency = auth()->user()->currency;
 $formattedAmount = number_format($convertedAmount, 2) . ' ' . $userCurrency;
 
+
+
+
+
+
+cd C:\xampp\htdocs\embassy
+git init
+echo "/vendor
+/node_modules
+/public/storage
+.env
+.env.*
+/storage/*.key
+/storage/app/public
+/storage/debugbar
+/storage/framework/cache/data
+/storage/framework/sessions
+/storage/framework/testing
+/storage/framework/views
+/storage/logs
+.idea
+.vscode" > .gitignore
+git add .
+git commit -m "Initial commit of Laravel project"
+git remote add origin git remote add origin https://github.com/Ahsum1558/embassy.git
+git push -u origin master
