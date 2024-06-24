@@ -1,0 +1,67 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+body{
+    font-family: Arial, Helvetica, Times, Courier, Times-New-Roman, Roboto-Regular, sans-serif; 
+}
+h3 { 
+    font-family: "Amiri"; 
+/*     direction: rtl; */
+}
+h2{
+  
+}
+
+.arabicLan{
+   font-family: 'Amiri', serif; 
+  font-weight: 400;
+}
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 1px solid #666;
+    padding: 8px;
+    text-align: left;
+}
+.my-table{
+    text-align: right;
+}
+#sign{
+    padding-top: 50px;
+    text-align: right;
+}
+
+/* php load_font.php arial ./lib/fonts/arial.ttf */
+/* php load_font.php arialbd ./lib/fonts/arialbd.ttf */
+/* php load_font.php AlHurra ./lib/fonts/AlHurraTxtBold.ttf */
+/*     php load_font.php Amiri ./lib/fonts/Amiri-Regular.ttf */
+/*     php load_font.php Lotus ./lib/fonts/Lotus.ttf */
+/* php load_font.php lateef ./lib/fonts/LateefRegOT.ttf */
+/* php load_font.php arial-arabic ./lib/fonts/alfont_com_arial-1.ttf */
+
+/*     php load_font.php Traditional-Arabic ./lib/fonts/Traditional-Arabic-Regular.ttf */
+/* php load_font.php Amiri-Bold ./lib/fonts/Amiri-Bold.ttf */
+/* php load_font.php Roboto-Regular ./lib/fonts/Roboto/Roboto-Regular.ttf */
+/* php load_font.php Times-New-Roman ./lib/fonts/Times-New-Roman.ttf */
+/* php load_font.php times-roman ./lib/fonts/times-new-roman.ttf */
+/* php load_font.php Uthmanic ./lib/fonts/Uthmanic.otf */
+/* php load_font.php traditional ./lib/traditional.ttf */
+
+
+/* php load_font.php andalus ./lib/fonts/AndalusArabicFont.ttf */
+/* php load_font.php simplified ./lib/fonts/SimplifiedArabicFont.ttf */
+/* php load_font.php Thabit ./lib/fonts/Thabit.ttf */
+/* php load_font.php Jomhuria-Regular ./lib/fonts/Jomhuria-Regular.ttf */
+/* php load_font.php Janna ./lib/fonts/Janna-Bold.ttf */
+/* php load_font.php Arialn ./lib/fonts/Arialn.ttf */
+/* php load_font.php Arabic ./lib/fonts/Arabic.ttf */
+/* php load_font.php AgaRasheeq ./lib/fonts/AgaRasheeqV2Rshyq-pqJy.ttf */
+
+/* php load_font.php ArabicTwo ./lib/fonts/ArabicTwo.ttf */
+/* php load_font.php aefaurat ./lib/fonts/ae_FuratRegular.ttf */
+
+
+
+

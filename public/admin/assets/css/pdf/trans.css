@@ -1,0 +1,107 @@
+@page {
+   margin: 20mm 5mm 5mm 5mm;
+}
+
+*{padding: 0; margin: 0; outline: 0; color: #000; background-color: #fff;}
+
+.clear{
+	clear: both;
+}
+#selected_option{
+	background-color: #444;
+	color: #fff;
+}
+body{
+	font-family: "arial";
+	width: 100%;
+	font-size: 15px;
+	color: #000;
+	padding: 0;
+	margin: 0;
+}
+.trans_heading{
+	text-align: center;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.app_wrapper{
+	border: 1px solid #000;
+}
+.app_wrapper .headertop{
+	text-align: center;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+.app_wrapper .headerdescrip{
+	text-align: center;
+	margin: 0;
+	font-size: 14px;
+}
+.app_wrapper .headeraddress{
+	text-align: center;
+	margin: 0;
+	font-size: 14px;
+}
+.app_wrapper .header_area{
+	width: 100%;
+	padding: 10px;
+}
+.app_wrapper .header_area .top_header{
+	width: 100%;
+}
+.app_wrapper .header_area .top_header .trans_voucher{
+	width: 49%;
+	float: left;
+	font-weight: bold;
+}
+.app_wrapper .header_area .top_header .trans_date{
+	width: 49%;
+	text-align: right;
+	font-weight: bold;
+}
+.app_wrapper .content_area{
+	width: 100%;
+}
+.app_wrapper .content_area .content_table{
+	width: 100%;
+}
+.app_wrapper .content_area .content_table #trans_table{
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #000;
+}
+.app_wrapper .content_area .content_table #trans_table thead{}
+.app_wrapper .content_area .content_table #trans_table thead th{
+	border: 1px solid #000;
+	padding: 5px;
+}
+.app_wrapper .content_area .content_table #trans_table tbody{}
+.app_wrapper .content_area .content_table #trans_table tbody td{
+	border: 1px solid #000;
+	padding: 5px;
+	font-size: 13px;
+	line-height: 1.5;
+}
+.app_wrapper .content_area .content_table #trans_table tbody td:nth-child(2){
+	text-align: center;
+}
+.app_wrapper .content_area .sign_area{
+	width: 100%;
+	padding: 15px;
+	padding-top: 30px;
+}
+.app_wrapper .content_area .sign_area .left_sign{
+	width: 32%;
+	float: left;
+}
+.app_wrapper .content_area .sign_area .middle_sign{
+	width: 32%;
+	float: left;
+	text-align: center;
+}
+.app_wrapper .content_area .sign_area .right_sign{
+	width: 32%;
+	text-align: right;
+}

@@ -1,0 +1,79 @@
+@page {
+   margin: 20mm 5mm 2mm 15mm;
+}
+
+*{padding: 0; margin: 0; outline: 0; color: #000; background-color: #fff;}
+
+.clear{
+	clear: both;
+}
+#selected_option{
+	background-color: #444;
+	color: #fff;
+}
+body{
+	font-family: "arial";
+	width: 100%;
+	font-size: 16px;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+
+.app_wrapper{}
+
+.app_wrapper .header_area{}
+.app_wrapper .header_area .top_header{}
+.app_wrapper .header_area .top_header .headline{}
+.app_wrapper .header_area .top_header .headline .visa_heading{
+	text-align: center;
+	font-size: 28px;
+	padding: 5px;
+}
+.app_wrapper .header_area .top_header .office_heading{
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+}
+.app_wrapper .header_area .top_header .office_heading .office_license{
+	width: 30%;
+	float: left;
+}
+.app_wrapper .header_area .top_header .office_heading .office_name{
+	width: 68%;
+	text-align: right;
+}
+.app_wrapper .header_area .top_header .submission{
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+}
+.app_wrapper .header_area .top_header .submission .submission_date{
+	width: 30%;
+	float: left;
+}
+.app_wrapper .header_area .top_header .submission .signature{
+	width: 68%;
+	text-align: right;
+}
+
+.app_wrapper .content_area{}
+.app_wrapper .content_area .content_table{}
+.app_wrapper .content_area .content_table #visalist_table{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+.app_wrapper .content_area .content_table #visalist_table thead{}
+.app_wrapper .content_area .content_table #visalist_table thead tr{}
+.app_wrapper .content_area .content_table #visalist_table thead tr th{
+	border: 1px solid #000;
+   text-align: center;
+   padding: 5px;
+}
+.app_wrapper .content_area .content_table #visalist_table tbody{}
+.app_wrapper .content_area .content_table #visalist_table tbody tr{}
+.app_wrapper .content_area .content_table #visalist_table tbody tr td{
+	border: 1px solid #777;
+	text-align: center;
+	padding: 5px;
+}

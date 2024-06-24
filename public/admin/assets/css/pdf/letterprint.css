@@ -1,0 +1,71 @@
+@page {
+   margin: 60mm 10mm 5mm 25mm;
+}
+
+*{padding: 0; margin: 0; outline: 0; color: #000; background-color: #fff;}
+
+.clear{
+	clear: both;
+}
+#selected_option{
+	background-color: #444;
+	color: #fff;
+}
+body{
+	font-family: "SolaimanLipi";
+	width: 100%;
+	font-size: 18px;
+}
+.application_area{}
+.application_area .letter_header{}
+.application_area .letter_header .application_to{}
+.application_area .letter_header .application_head{}
+.application_area .letter_header .application_bmet{}
+.application_area .letter_header .application_address{}
+.application_area .letter_subject{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.application_area .letter_subject .subject_name{
+	width: 7%;
+	float: left;
+	display: inline-block;
+}
+.application_area .letter_subject .subject{
+	width: auto;
+	float: left;
+	display: inline-block;
+	text-decoration: underline;
+}
+.application_area .letter_body{}
+.application_area .letter_body .greeting{
+	padding-bottom: 15px;
+}
+.application_area .letter_body .body_top{
+	text-align: justify;
+}
+.application_area .letter_body .body_center{
+	text-align: justify;
+}
+.application_area .letter_body .body_bottom{
+	width: 100%;
+	padding-top: 20px;
+}
+.application_area .letter_body .body_bottom .left_body{
+	width: 60%;
+	float: left;
+	display: inline-block;
+	padding-left: 15px;
+}
+.application_area .letter_body .body_bottom .left_body .left_bottom{}
+.application_area .letter_body .body_bottom .right_body{
+	width: auto;
+	float: left;
+	display: inline-block;
+	padding-top: 70px;
+}
+.application_area .letter_body .body_bottom .right_body .right_bottom{}
+.application_area .letter_body .body_footer{
+	padding-top: 40px;
+	padding-left: 25px;
+}

@@ -1,0 +1,203 @@
+@page {
+   margin: 10mm 5mm 5mm 15mm;
+}
+
+*{padding: 0; margin: 0; outline: 0; color: #000; background-color: #fff;}
+
+.clear{
+	clear: both;
+}
+#selected_option{
+	background-color: #444;
+	color: #fff;
+}
+body{
+	font-family: "SolaimanLipi";
+	width: 100%;
+	font-size: 16px;
+}
+.app_wrapper{
+	width: 100%;
+	border-left: 1px solid #000;
+	padding-left: 4px;
+}
+.app_wrapper .main_content{
+	padding-left: 4px;
+	text-align: justify;
+}
+.app_wrapper .main_content .primary_putup .putup_starting{}
+.app_wrapper .main_content .primary_putup .putup_starting .putup_serial{
+	display: inline-block;
+	float: left;
+	width: 5%;
+	font-size: 20px;
+}
+.app_wrapper .main_content .primary_putup .putup_starting .putup_primary{
+	display: inline-block;
+	float: left;
+	width: auto;
+	font-size: 18px;
+}
+.app_wrapper .main_content .primary_putup .putup_condition{
+	padding-left: 15px;
+	padding-top: 15px;
+}
+.app_wrapper .main_content .primary_putup .putup_condition .condition_value{
+	font-size: 18px;
+}
+.app_wrapper .main_content .putup_customers{
+	padding-top: 10px;
+}
+.app_wrapper .main_content .putup_customers .customers_headeline{
+	font-size: 20px;
+}
+.app_wrapper .main_content .putup_customers .customers_headeline .heading_sl{}
+.app_wrapper .main_content .putup_customers .customers_headeline .heading_title{}
+.app_wrapper .main_content .putup_customers .customers_table{}
+.app_wrapper .main_content .putup_customers .customers_table #customersData{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+.app_wrapper .main_content .putup_customers .customers_table #customersData tr{}
+.app_wrapper .main_content .putup_customers .customers_table #customersData tr th{
+	border: 1px solid #000;
+   text-align: center;
+   font-family: "kalpurush";
+   font-size: 13px;
+   font-weight: normal;
+}
+.app_wrapper .main_content .putup_customers .customers_table #customersData tr td{
+	border: 1px solid #000;
+   text-align: center;
+   text-transform: uppercase;
+	font-family: "roboto";
+	font-size: 12px;
+	padding: 4px;
+}
+.app_wrapper .main_content .putup_customers .customers_table #customersData tr td:nth-child(2){
+	 text-align: left;
+}
+.app_wrapper .main_content .putup_customers .customers_table #customersData tr td:nth-child(4){
+	 text-align: left;
+}
+.app_wrapper .main_content .putup_training{
+	padding-top: 10px;
+}
+.app_wrapper .main_content .putup_training .training_headeline{
+	font-size: 20px;
+}
+.app_wrapper .main_content .putup_training .training_headeline .heading_sl{}
+.app_wrapper .main_content .putup_training .training_headeline .heading_title{}
+.app_wrapper .main_content .putup_training .training_table{}
+.app_wrapper .main_content .putup_training .training_table #customersData{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+.app_wrapper .main_content .putup_training .training_table #customersData tr{}
+.app_wrapper .main_content .putup_training .training_table #customersData tr th{
+	border: 1px solid #000;
+   text-align: center;
+   font-family: "kalpurush";
+   font-size: 13px;
+   font-weight: normal;
+}
+.app_wrapper .main_content .putup_training .training_table #customersData tr td{
+	border: 1px solid #000;
+   text-align: center;
+   text-transform: uppercase;
+	font-family: "roboto";
+	font-size: 12px;
+	padding: 4px;
+}
+.app_wrapper .main_content .putup_training .training_table #customersData tr td:nth-child(2){
+	 text-align: left;
+}
+.app_wrapper .main_content .putup_center{
+	padding-top: 10px;
+}
+.app_wrapper .main_content .putup_center .center_headeline{
+	font-size: 20px;
+}
+.app_wrapper .main_content .putup_center .center_headeline .heading_sl{}
+.app_wrapper .main_content .putup_center .center_headeline .heading_title{}
+.app_wrapper .main_content .putup_center .center_table{}
+.app_wrapper .main_content .putup_center .center_table #customersData{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+.app_wrapper .main_content .putup_center .center_table #customersData tr{}
+.app_wrapper .main_content .putup_center .center_table #customersData tr th{
+	border: 1px solid #000;
+   text-align: center;
+   font-family: "kalpurush";
+   font-size: 13px;
+   font-weight: normal;
+}
+.app_wrapper .main_content .putup_center .center_table #customersData tr td{
+	border: 1px solid #000;
+   text-align: center;
+   text-transform: uppercase;
+	font-family: "roboto";
+	font-size: 10px;
+	padding: 4px;
+}
+.app_wrapper .main_content .putup_center .center_table #customersData tr td:nth-child(2){
+	 text-align: left;
+}
+.app_wrapper .main_content .putup_payment{
+	padding-top: 10px;
+}
+.app_wrapper .main_content .putup_payment .payment_headeline{
+	font-size: 20px;
+}
+.app_wrapper .main_content .putup_payment .payment_headeline .heading_sl{}
+.app_wrapper .main_content .putup_payment .payment_headeline .heading_title{}
+.app_wrapper .main_content .putup_payment .payment_table{}
+.app_wrapper .main_content .putup_payment .payment_table #paymentData{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.app_wrapper .main_content .putup_payment .payment_table #paymentData tr{}
+.app_wrapper .main_content .putup_payment .payment_table #paymentData tr th{
+	border: 1px solid #000;
+   text-align: center;
+   font-family: "kalpurush";
+   font-size: 15px;
+   font-weight: normal;
+}
+.app_wrapper .main_content .putup_payment .payment_table #paymentData tr td{
+	border: 1px solid #000;
+   text-align: center;
+   text-transform: uppercase;
+	font-size: 15px;
+	padding: 4px;
+}
+.app_wrapper .main_content .putup_translate{
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+.app_wrapper .main_content .putup_translate .translate_info{}
+.app_wrapper .main_content .putup_translate .translate_info .translate_serial{
+	display: inline-block;
+	float: left;
+	width: 5%;
+	font-size: 20px;
+}
+.app_wrapper .main_content .putup_translate .translate_info .translate_content{
+	display: inline-block;
+	float: left;
+	width: auto;
+	font-size: 18px;
+}
+.app_wrapper .main_content .putup_translator{
+	font-size: 20px;
+	text-align: center;
+}
+.app_wrapper .main_content .putup_transbellow{
+	font-size: 20px;
+}

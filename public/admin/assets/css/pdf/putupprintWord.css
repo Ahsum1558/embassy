@@ -1,0 +1,166 @@
+*{padding: 10px; margin: 0; outline: 0; color: #000; background-color: #fff;}
+
+.clear{
+	clear: both;
+}
+#selected_option{
+	background-color: #444;
+	color: #fff;
+}
+body{
+	font-family: "SolaimanLipi";
+	width: 100%;
+	font-size: 15px;
+}
+.app_wrapper{
+	width: 100%;
+	padding-left: 4px;
+}
+.app_wrapper .main_content{
+	padding-left: 4px;
+	text-align: justify;
+}
+.app_wrapper .main_content .putup_headline{}
+.app_wrapper .main_content .putup_headline .top_heading{
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.app_wrapper .main_content .putup_customers{
+	padding-top: 10px;
+}
+.app_wrapper .main_content .putup_customers .customers_headeline{
+	font-size: 20px;
+}
+.app_wrapper .main_content .putup_customers .customers_headeline .heading_sl{}
+.app_wrapper .main_content .putup_customers .customers_headeline .heading_title{}
+.app_wrapper .main_content .putup_customers .customers_table{}
+.app_wrapper .main_content .putup_customers .customers_table #tableHeadline{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+.app_wrapper .main_content .putup_customers .customers_table #tableHeadline tr{}
+.app_wrapper .main_content .putup_customers .customers_table #tableHeadline tr td{
+	border: 1px solid #000;
+   text-transform: uppercase;
+   font-family: "kalpurush";
+	font-size: 14px;
+	padding: 2px;
+	padding-left: 4px;
+}
+
+.app_wrapper .main_content .putup_customers .customers_table #customersData{
+	border-collapse: collapse;
+	border: 2px solid #000;
+	width: 100%;
+}
+.app_wrapper .main_content .putup_customers .customers_table #customersData tr{}
+.app_wrapper .main_content .putup_customers .customers_table #customersData tr th{
+	border: 1px solid #000;
+   font-family: "kalpurush";
+   font-size: 13px;
+   font-weight: normal;
+}
+.app_wrapper .main_content .putup_customers .customers_table #customersData tr td{
+	border: 1px solid #000;
+   text-align: center;
+   text-transform: uppercase;
+	font-family: "roboto";
+	font-size: 12px;
+	padding: 2px;
+	border-collapse: collapse;
+}
+.app_wrapper .main_content .putup_customers .customers_table #customersData tr td:nth-child(1){
+	 text-align: left;
+}
+
+.app_wrapper .main_content .putup_translate{
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+.app_wrapper .main_content .putup_translate .translate_info{}
+
+.app_wrapper .main_content .putup_translate .translate_info #paymentTable{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+.app_wrapper .main_content .putup_translate .translate_info #paymentTable tr{
+	padding-bottom: 10px;
+}
+.app_wrapper .main_content .putup_translate .translate_info #paymentTable tr td{
+	border: 1px solid #000;
+   text-align: center;
+	font-size: 16px;
+	padding: 4px;
+}
+
+.app_wrapper .main_content .putup_promise{
+	padding-top: 10px;
+}
+.app_wrapper .main_content .putup_promise .promise_info{}
+.app_wrapper .main_content .putup_promise .promise_info .promise_heading{
+	font-size: 20px;
+	width: 10%;
+	float: left;
+}
+.app_wrapper .main_content .putup_promise .promise_info .promise_content{
+	width: auto;
+	float: left;
+}
+
+.app_wrapper .main_content .putup_sign{
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid #000;
+}
+.app_wrapper .main_content .putup_sign .sign_first{
+	float: left;
+	width: 22%;
+	border: 1px solid #000;
+	padding-bottom: 100px;
+}
+.app_wrapper .main_content .putup_sign .sign_first .note{
+/* 	padding-bottom: 78px; */
+}
+.app_wrapper .main_content .putup_sign .sign_first .signature{}
+.app_wrapper .main_content .putup_sign .sign_second{
+	float: left;
+	width: 20%;
+	border: 1px solid #000;
+}
+.app_wrapper .main_content .putup_sign .sign_second .note{
+	padding-bottom: 78px;
+}
+.app_wrapper .main_content .putup_sign .sign_second .signature{}
+.app_wrapper .main_content .putup_sign .sign_third{
+	float: left;
+	width: 18%;
+	border: 1px solid #000;
+}
+.app_wrapper .main_content .putup_sign .sign_third .note{
+	padding-bottom: 78px;
+}
+.app_wrapper .main_content .putup_sign .sign_third .signature{}
+.app_wrapper .main_content .putup_sign .sign_forth{
+	float: left;
+	width: 18%;
+	border: 1px solid #000;
+}
+.app_wrapper .main_content .putup_sign .sign_forth .note{
+	padding-bottom: 78px;
+}
+.app_wrapper .main_content .putup_sign .sign_forth .signature{}
+.app_wrapper .main_content .putup_sign .sign_fifth{
+	float: left;
+	width: auto;
+	border: 1px solid #000;
+}
+.app_wrapper .main_content .putup_sign .sign_fifth .note{
+	padding-bottom: 78px;
+}
+.app_wrapper .main_content .putup_sign .sign_fifth .signature{}

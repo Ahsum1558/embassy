@@ -1,0 +1,518 @@
+@page {
+   margin: 3mm 10mm 2mm 15mm;
+}
+/* @page toc { sheet-size: A4; } */
+
+*{padding: 0; margin: 0; outline: 0; color: #000; background-color: #fff;}
+
+.clear{
+	clear: both;
+}
+#selected_option{
+	background-color: #444;
+	color: #fff;
+}
+body{
+	font-family: "roboto";
+	width: 100%;
+	font-size: 13px;
+}
+.data_sheet{}
+.data_sheet .data_header{
+	border-bottom: 5px solid #000;
+	border-bottom-style: double;
+	font-size: 16px;
+	font-weight: bold;
+	width: 100%;
+	float: left;
+	padding-bottom: 8px;
+}
+.data_sheet .data_header .header_left{
+	width: 10%;
+	float: left;
+	display: inline-block;
+}
+.data_sheet .data_header .header_left img{}
+.data_sheet .data_header .header_center{
+	text-align: center;
+	width: 78%;
+	float: left;
+	display: inline-block;
+	padding-top: 25px;
+}
+.data_sheet .data_header .header_center .top_center{}
+.data_sheet .data_header .header_center .bottom_center{}
+.data_sheet .data_header .header_right{
+	width: 10%;
+	float: left;
+	display: inline-block;
+}
+.data_sheet .data_header .header_right img{}
+.data_sheet .content{}
+.data_sheet .content .content_headline{
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.data_sheet .content .content_number{}
+.data_sheet .content .content_number .left_number{
+	font-weight: bold;
+	width: 25%;
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+}
+.data_sheet .content .content_number .center_number{
+	width: 40%;
+	float: left;
+}
+.data_sheet .content .content_number .center_number #numberTable{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+.data_sheet .content .content_number .center_number #numberTable tr{}
+.data_sheet .content .content_number .center_number #numberTable tr th{
+	border: 1px solid #000;
+   text-align: center;
+   font-size: 13px;
+}
+.data_sheet .content .content_number .center_number #numberTable tr td{
+	border: 1px solid #000;
+   text-align: center;
+   text-transform: uppercase;
+	font-family: "roboto";
+	font-size: 10px;
+	padding: 12px 5px;
+}
+.data_sheet .content .content_number .center_number #numberTable tr td:nth-child(3){
+	 border-top: 1px solid #fff;
+	 border-bottom: 1px solid #fff;
+}
+.data_sheet .content .content_number .center_number #numberTable tr td:nth-child(8){
+	 border-top: 1px solid #fff;
+	 border-bottom: 1px solid #fff;
+	 border-right: 1px solid #fff;
+}
+.data_sheet .content .content_number .center_number #numberTable tr td:nth-child(9){
+	 border-top: 1px solid #fff;
+	 border-bottom: 1px solid #fff;
+}
+
+.data_sheet .content .content_number .right_number{
+	width: 25%;
+	float: left;
+	padding-left: 30px;
+}
+.data_sheet .content .content_visa{
+	width: 100%;
+	padding-top: 3px;
+}
+.data_sheet .content .content_visa .visa_headline{
+	font-weight: bold;
+	padding-bottom: 3px;
+}
+.data_sheet .content .content_visa .visa_body{
+	padding-left: 15px;
+}
+.data_sheet .content .content_visa .visa_body .visa_top{
+	width: 100%;
+	padding-bottom: 3px;
+}
+.data_sheet .content .content_visa .visa_body .visa_top .block_visa{
+	width: 50%;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_top .block_visa .data_name{
+	width: 32%;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_top .block_visa .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	font-weight: bold;
+}
+.data_sheet .content .content_visa .visa_body .visa_top .visa_issue{
+	width: auto;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_top .visa_issue .data_name{
+	width: 32%;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_top .visa_issue .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	font-weight: bold;
+}
+.data_sheet .content .content_visa .visa_body .visa_middle{
+	width: 100%;
+	padding-bottom: 3px;
+}
+.data_sheet .content .content_visa .visa_body .visa_middle .issue_country{
+	width: 50%;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_middle .issue_country .data_name{
+	width: 42%;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_middle .issue_country .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	font-weight: bold;
+}
+.data_sheet .content .content_visa .visa_body .visa_middle .delegation_visa{
+	width: auto;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_middle .delegation_visa .data_name{
+	width: 35%;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_middle .delegation_visa .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	font-weight: bold;
+}
+.data_sheet .content .content_visa .visa_body .visa_bottom{
+	width: 100%;
+	padding-bottom: 3px;
+}
+.data_sheet .content .content_visa .visa_body .visa_bottom .rl_number{
+	width: 35%;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_bottom .rl_number .data_name{
+	width: 30%;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_bottom .rl_number .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	font-weight: bold;
+}
+.data_sheet .content .content_visa .visa_body .visa_bottom .ra_name{
+	width: auto;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_bottom .ra_name .data_name{
+	width: 18%;
+	float: left;
+}
+.data_sheet .content .content_visa .visa_body .visa_bottom .ra_name .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	font-weight: bold;
+}
+.data_sheet .content .content_foreign{
+	width: 100%;
+	padding-top: 3px;
+}
+.data_sheet .content .content_foreign .foreign_headline{
+	font-weight: bold;
+	padding-bottom: 3px;
+}
+.data_sheet .content .content_foreign .foreign_body{
+	padding-left: 15px;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_top{
+	width: 100%;
+	padding-bottom: 3px;
+}
+
+.data_sheet .content .content_foreign .foreign_body .foreign_top .confirmation{
+	width: 100%;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_top .confirmation .data_name{
+	width: 47%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_top .confirmation .data_info{
+	width: auto;
+	float: left;
+	font-weight: bold;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_middle{
+	width: 100%;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_middle .employer_name{
+	width: 100%;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_middle .employer_name .data_name{
+	width: 49%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_middle .employer_name .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	color: #fff;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_middle_name{
+	width: 100%;
+	padding-bottom: 3px;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_middle_name .employer_name{
+	width: 100%;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_middle_name .employer_name .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	color: #fff;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom{
+	width: 100%;
+	padding-bottom: 3px;
+}
+
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .street_address{
+	width: 100%;
+	padding-bottom: 3px;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .street_address .data_name{
+	width: 18%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .street_address .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	color: #fff;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info{
+	width: 100%;
+	padding-left: 15px;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_top{
+	width: 100%;
+	padding-bottom: 3px;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_top .left_info{
+	width: 50%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_top .left_info .data_name{
+	width: 25%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_top .left_info .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	color: #fff;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_top .right_info{
+	width: auto;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_top .right_info .data_name{
+	width: 18%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_top .right_info .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	color: #fff;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_middle{
+	width: 100%;
+	padding-bottom: 3px;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_middle .left_info{
+	width: 50%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_middle .left_info .data_name{
+	width: 23%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_middle .left_info .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	color: #fff;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_middle .right_info{
+	width: auto;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_middle .right_info .data_name{
+	width: 28%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_middle .right_info .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	color: #fff;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_bottom{
+	width: 100%;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_bottom .left_info{
+	width: 50%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_bottom .left_info .data_name{
+	width: 18%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_bottom .left_info .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	color: #fff;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_bottom .right_info{
+	width: auto;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_bottom .right_info .data_name{
+	width: 22%;
+	float: left;
+}
+.data_sheet .content .content_foreign .foreign_body .foreign_bottom .address_info .info_bottom .right_info .data_info{
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	color: #fff;
+}
+.data_sheet .content .content_employee{
+	width: 100%;
+}
+.data_sheet .content .content_employee .employee_headline{
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+.data_sheet .content .content_employee .employee_body{}
+.data_sheet .content .content_employee .employee_body #employeeData{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+	font-size: 12px;
+}
+.data_sheet .content .content_employee .employee_body #employeeData tr{
+	font-size: 12px;
+}
+.data_sheet .content .content_employee .employee_body #employeeData tr th{
+	border: 1px solid #000;
+   text-align: center;
+   font-size: 12px;
+}
+.data_sheet .content .content_employee .employee_body #employeeData tr td{
+	border: 1px solid #000;
+   text-align: center;
+   padding: 2px;
+   font-size: 12px;
+}
+.data_sheet .content .content_employee .employee_body #employeeData tr td:nth-child(1){
+	 text-align: left;
+	 padding-left: 5px;
+}
+.data_sheet .content .content_employee .employee_body #employeeData tr td:nth-child(2){
+	 font-weight: bold;
+}
+.data_sheet .content .content_job{
+	width: 100%;
+	padding-top: 4px;
+}
+.data_sheet .content .content_job .job_headline{
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+.data_sheet .content .content_job .job_body{}
+.data_sheet .content .content_job .job_body #jobData{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+	font-size: 12px;
+}
+.data_sheet .content .content_job .job_body #jobData tr{
+	font-size: 12px;
+}
+.data_sheet .content .content_job .job_body #jobData tr th{
+	border: 1px solid #000;
+   text-align: center;
+   font-size: 12px;
+}
+.data_sheet .content .content_job .job_body #jobData tr td{
+	border: 1px solid #000;
+   text-align: center;
+   padding: 2px;
+   font-size: 12px;
+}
+.data_sheet .content .content_job .job_body #jobData tr td:nth-child(1){
+	 text-align: left;
+	 padding-left: 5px;
+}
+.data_sheet .content .content_job .job_body .job_footer{
+	padding-left: 20px;
+}
+.data_sheet .content .content_job .job_body .job_footer .job_left{
+	font-weight: bold;
+}
+.data_sheet .content .content_job .job_body .job_footer .job_right{
+	font-size: 11px;
+}
+.data_sheet .content .content_footer{
+	padding-top: 20px;
+	padding-left: 10px;
+	width: 100%;
+}
+.data_sheet .content .content_footer .top_footer{
+	width: 100%;
+}
+.data_sheet .content .content_footer .top_footer .sign_officer{
+	width: 50%;
+	float: left;
+	text-decoration: underline;
+}
+.data_sheet .content .content_footer .top_footer .sign_applicant{
+	width: auto;
+	float: left;
+	text-decoration: underline;
+	text-align: center;
+}
+.data_sheet .content .content_footer .bottom_footer{
+	width: 100%;
+	padding-top: 5px;
+}
+.data_sheet .content .content_footer .bottom_footer .email{
+	width: 50%;
+	float: left;
+}
+.data_sheet .content .content_footer .bottom_footer .email .email_address{
+	text-decoration: underline;
+	color: blue;
+}
+.data_sheet .content .content_footer .bottom_footer .web{
+	width: auto;
+	float: left;
+	text-align: center;	
+}

@@ -1,0 +1,3 @@
+<h1 style="font-size: 28px; text-decoration: underline;">Reset Password</h1>
+<p style="font-size: 18px; color: #3035e7; font-weight: bold; text-transform: capitalize;">Click below to reset your password</p>
+<a href="{{ route('admin.resetPassword', $token) }}" style="font-size: 22px; font-weight: bold; color: #fff; background: green; padding: 5px 10px; text-decoration: none; border-radius: 5px; border: 1px solid green; box-shadow: 3px 5px 0 0;">Reset Password</a>

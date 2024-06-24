@@ -1,0 +1,1084 @@
+*{padding: 0; margin: 0; outline: 0; color: #000; background-color: #fff;}
+
+.clear{
+	clear: both;
+}
+#selected_option{
+	background-color: #444;
+	color: #fff;
+}
+body{
+	padding: 10px;
+	padding-left: 50px;
+	font-size: 13px;
+}
+.app_wrapper{}
+.app_wrapper .header_area{}
+
+.app_wrapper .header_area .top_header{
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+}
+.app_wrapper .header_area .top_header .top_barcode{
+	margin-right: 100px;
+	margin-left: 100px;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+.app_wrapper .header_area .top_header .top_mofa{
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+.app_wrapper .header_area .middle_header{
+	display: flex;
+	width: 100%;
+	margin-top: 30px;
+}
+.app_wrapper .header_area .middle_header .left_middle{
+	width: 30%;
+	float: left;
+	margin-right: 20px;
+	display: inline-block;
+}
+.app_wrapper .header_area .middle_header .left_middle .img_header{
+	border: 2px solid #000;
+	width: 50px;
+	height: 50px;
+	padding: 20px;
+	display: block;
+}
+.app_wrapper .header_area .middle_header .left_middle .arabic_middle{
+	font-family: "arial-arabic";
+	text-align: center;
+	vertical-align: middle;
+}
+.app_wrapper .header_area .middle_header .left_middle .english_middle{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.app_wrapper .header_area .middle_header .center_middle{
+	width: 30%;
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+}
+.app_wrapper .header_area .middle_header .center_middle img{
+	vertical-align: middle;
+}
+
+.app_wrapper .header_area .middle_header .right_middle{
+	width: 35%;
+	display: inline-block;
+	float: right;
+}
+.app_wrapper .header_area .middle_header .right_middle .right_arabic{
+	font-family: "arialbd";
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+}
+.app_wrapper .header_area .middle_header .right_middle .right_english{
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.app_wrapper .main_content{
+	width: 100%;
+}
+.app_wrapper .main_content .name_description{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 5px;
+}
+.app_wrapper .main_content .name_description .cust_full{
+	margin-right: 10px;
+}
+.app_wrapper .main_content .name_description .cust_name{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	margin-right: 10px;
+}
+.app_wrapper .main_content .name_description .father_name{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .name_description .cust_fullarabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	right: 0;
+	margin-right: 0;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .mother_description{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+}
+.app_wrapper .main_content .mother_description .mother_full{
+	margin-right: 10px;
+}
+.app_wrapper .main_content .mother_description .mother_name{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .mother_description .mother_fullarabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	right: 0;
+	margin-right: 0;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .birth_description{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+}
+.app_wrapper .main_content .birth_description .birth_full{
+	margin-right: 10px;
+}
+.app_wrapper .main_content .birth_description .birth_dath{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	margin-right: 10px;
+}
+.app_wrapper .main_content .birth_description .birth_datharabic{
+	font-family: "arial-arabic";
+	margin-right: 10px;
+}
+.app_wrapper .main_content .birth_description .birth_placefull{
+	margin-right: 10px;
+}
+.app_wrapper .main_content .birth_description .birth_place{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .birth_description .birth_placearabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	right: 0;
+	margin-right: 0;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .nationality_description{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+}
+.app_wrapper .main_content .nationality_description .nationality_previousfull{
+	margin-right: 5px;
+}
+.app_wrapper .main_content .nationality_description .nationality_previous{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+	margin-right: 5px;
+}
+.app_wrapper .main_content .nationality_description .nationality_previousarabic{
+	font-family: "arial-arabic";
+}
+.app_wrapper .main_content .nationality_description .nationality_presentfull{}
+.app_wrapper .main_content .nationality_description .nationality_present{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+}
+.app_wrapper .main_content .nationality_description .nationality_presentarabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	right: 0;
+	margin-right: 0;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .social_status{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 6px;
+}
+.app_wrapper .main_content .social_status .gender_full{
+	display: inline-block;
+	margin-right: 10px;
+}
+.app_wrapper .main_content .social_status .gender_female{
+	font-family: "arial-arabic";
+	display: inline-block;
+	margin-right: 10px;
+	border: 1px solid #000;
+	padding: 0 3px;
+}
+.app_wrapper .main_content .social_status .gender_male{
+	font-family: "arial-arabic";
+	display: inline-block;
+	margin-right: 10px;
+	border: 1px solid #000;
+	padding: 0 3px;
+	font-weight: 700;
+}
+.app_wrapper .main_content .social_status .gender_arabic{
+	font-family: "arial-arabic";
+	display: inline-block;
+	margin-right: 10px;
+}
+.app_wrapper .main_content .social_status .marital_statusfull{
+	display: inline-block;
+	margin-right: 10px;
+}
+.app_wrapper .main_content .social_status .marital_status{
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+}
+.app_wrapper .main_content .social_status .marital_statusarabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	right: 0;
+	margin-right: 0;
+	float: right;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .section_deen{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+}
+.app_wrapper .main_content .section_deen .section_full{
+	margin-right: 10px;
+}
+.app_wrapper .main_content .section_deen .section_name{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .section_deen .section_arabic{
+	font-family: "arial-arabic";
+}
+.app_wrapper .main_content .section_deen .deen_full{
+	margin-right: 10px;
+}
+.app_wrapper .main_content .section_deen .deen_name{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .section_deen .deen_arabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	right: 0;
+	margin-right: 0;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .section_efficiencyarabic{
+	font-family: "arial-arabic";
+	display: block;
+	margin-top: 1px;
+}
+.app_wrapper .main_content .section_efficiencyarabic .issue_placearabic{
+	margin-left: 150px;
+}
+.app_wrapper .main_content .section_efficiencyarabic .qualification_arabic{
+	margin-left: 150px;
+}
+.app_wrapper .main_content .section_efficiencyarabic .profession_namearabic{
+	font-size: 16px;
+	margin-left: 200px;
+}
+.app_wrapper .main_content .section_efficiencyarabic .profession_arabic{
+	text-align: right;
+	right: 0;
+	margin-right: 0;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .section_efficiency{
+	display: block;
+	border-bottom: 1px solid #999;
+}
+.app_wrapper .main_content .section_efficiency .issue_placefull{
+	margin-right: 100px;
+}
+.app_wrapper .main_content .section_efficiency .issue_place{}
+
+.app_wrapper .main_content .section_efficiency .qualification_full{
+	margin-right: 120px;
+}
+.app_wrapper .main_content .section_efficiency .qualification{}
+
+.app_wrapper .main_content .section_efficiency .profession_full{
+	margin-right: 50px;
+}
+.app_wrapper .main_content .section_efficiency .profession_name{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.app_wrapper .main_content .address_area{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+}
+.app_wrapper .main_content .address_area .address_full{
+	margin-right: 10px;
+}
+.app_wrapper .main_content .address_area .address_all{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .address_area .address_arabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .district_area{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+	text-align: center;
+}
+.app_wrapper .main_content .district_area .address_district{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+}
+
+.app_wrapper .main_content .business_area{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+}
+.app_wrapper .main_content .business_area .business_full{
+	margin-right: 10px;
+}
+.app_wrapper .main_content .business_area .business_name{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .business_area .business_arabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .business_address{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+	text-align: center;
+}
+.app_wrapper .main_content .business_address .business_location{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+}
+
+.app_wrapper .main_content .purpose_travel{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 10px;
+}
+#travel{
+	border-collapse: separate;
+	border-spacing: 20px 0px;
+	width: 100%;
+}
+.app_wrapper .main_content .purpose_travel .purpose_full{
+	display: inline-block;
+	margin-right: 10px;
+}
+.app_wrapper .main_content .purpose_travel .work_purpose{
+	border: 1px solid #000;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0 3px;
+	width: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+.app_wrapper .main_content .purpose_travel .transit_purose{
+	border: 1px solid #000;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0 3px;
+	width: 32px;
+	text-align: center;
+	font-size: 12px;
+}
+.app_wrapper .main_content .purpose_travel .visit_purose{
+	border: 1px solid #000;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0 3px;
+	width: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+.app_wrapper .main_content .purpose_travel .umrah_purose{
+	border: 1px solid #000;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0 3px;
+	width: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+.app_wrapper .main_content .purpose_travel .residence_purose{
+	border: 1px solid #000;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0 3px;
+	width: 45px;
+	text-align: center;
+	font-size: 12px;
+}
+.app_wrapper .main_content .purpose_travel .hajj_purose{
+	border: 1px solid #000;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0 3px;
+	width: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+.app_wrapper .main_content .purpose_travel .diplomacy_purose{
+	border: 1px solid #000;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0 3px;
+	width: 50px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .purpose_travel .work_purpose span,
+.app_wrapper .main_content .purpose_travel .transit_purose span,
+.app_wrapper .main_content .purpose_travel .visit_purose span,
+.app_wrapper .main_content .purpose_travel .umrah_purose span,
+.app_wrapper .main_content .purpose_travel .residence_purose span,
+.app_wrapper .main_content .purpose_travel .hajj_purose span,
+.app_wrapper .main_content .purpose_travel .diplomacy_purose span{
+	font-family: "arial-arabic";
+	text-align: center;
+	font-size: 12px;
+}
+.app_wrapper .main_content .purpose_travel .purose_arabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	text-align: center;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .pasport_infoarabic{
+	font-family: "arial-arabic";
+	display: block;
+	margin-top: 1px;
+}
+.app_wrapper .main_content .pasport_infoarabic .issue_placenamearabic{
+	margin-right: 100px;
+	margin-left: 170px;
+}
+.app_wrapper .main_content .pasport_infoarabic .issue_datenamearabic{
+	margin-left: 50px;
+}
+.app_wrapper .main_content .pasport_infoarabic .passport_nofullarabic{
+	text-align: right;
+	float: right;
+	text-align: center;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .passport_info{
+	display: block;
+}
+.app_wrapper .main_content .passport_info .issue_placefullname{}
+.app_wrapper .main_content .passport_info .issue_placename{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .passport_info .issue_datefull{
+	margin-left: 50px;
+}
+.app_wrapper .main_content .passport_info .issue_date{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .passport_info .passport_nofull{
+	margin-left: 50px;
+}
+.app_wrapper .main_content .passport_info .passport_no{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.app_wrapper .main_content .passport_information{
+	display: block;
+	border-bottom: 1px solid #999;
+}
+.app_wrapper .main_content .passport_information .expiry_datefull{}
+.app_wrapper .main_content .passport_information .expiry_date{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .passport_information .expiry_datenamearabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .residency_infoarabic{
+	font-family: "arial-arabic";
+	display: block;
+	margin-top: 1px;
+}
+.app_wrapper .main_content .residency_infoarabic .residency_arabic{
+	margin-left: 150px;
+}
+.app_wrapper .main_content .residency_infoarabic .arrival_arabic{
+	margin-left: 150px;
+}
+.app_wrapper .main_content .residency_infoarabic .departure_arabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .residency_info{
+	display: block;
+	border-bottom: 1px solid #999;
+}
+.app_wrapper .main_content .residency_info .residency_full{}
+.app_wrapper .main_content .residency_info .residency_time{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .residency_info .arrival_full{
+	margin-left: 30px;
+}
+.app_wrapper .main_content .residency_info .departure_full{
+	margin-left: 100px;
+}
+
+.app_wrapper .main_content .payment_modearabic{
+	font-family: "arial-arabic";
+	display: block;
+	margin-top: 1px;
+}
+.app_wrapper .main_content .payment_modearabic .payment_datearabic{
+	margin-left: 45px;
+}
+.app_wrapper .main_content .payment_modearabic .payment_noarabic{
+	margin-left: 45px;
+}
+.app_wrapper .main_content .payment_modearabic .payment_chequedatearabic{
+	margin-left: 65px;
+}
+.app_wrapper .main_content .payment_modearabic .payment_chequenoarabic{
+	margin-left: 65px;
+}
+.app_wrapper .main_content .payment_modearabic .payment_casharabic{
+	margin-left: 45px;
+}
+.app_wrapper .main_content .payment_modearabic .payment_freearabic{
+	margin-left: 45px;
+}
+.app_wrapper .main_content .payment_modearabic .payment_typearabic{
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .payment_mode{
+	display: block;
+	border-bottom: 1px solid #999;
+}
+.app_wrapper .main_content .payment_mode .payment_type{}
+.app_wrapper .main_content .payment_mode .payment_free{
+	margin-left: 10px;
+}
+.app_wrapper .main_content .payment_mode .payment_cash{
+	margin-left: 10px;
+}
+.app_wrapper .main_content .payment_mode .payment_chequeno{
+	margin-left: 10px;
+}
+.app_wrapper .main_content .payment_mode .payment_chequedate{
+	margin-left: 70px;
+}
+.app_wrapper .main_content .payment_mode .payment_symbol{
+	margin-left: 70px;
+}
+.app_wrapper .main_content .payment_mode .payment_no{
+	margin-left: 50px;
+}
+.app_wrapper .main_content .payment_mode .payment_date{
+	margin-left: 50px;
+}
+
+.app_wrapper .main_content .relation_arabic{
+	font-family: "arial-arabic";
+	display: block;
+	margin-top: 1px;
+}
+.app_wrapper .main_content .relation_arabic .relationship_arabic{
+	margin-left: 200px;
+}
+.app_wrapper .main_content .relation_arabic .relationship_namearabic{
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .relation{
+	display: block;
+	border-bottom: 1px solid #999;
+}
+.app_wrapper .main_content .relation .relationship{}
+
+.app_wrapper .main_content .destination{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+}
+.app_wrapper .main_content .destination .destination_full{
+	margin-right: 220px;
+}
+.app_wrapper .main_content .destination .destination_fullarabic{
+	margin-right: 20px;
+	font-family: "arial-arabic";
+}
+.app_wrapper .main_content .destination .destination_carrier{}
+.app_wrapper .main_content .destination .destination_carrierarabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .dependents{
+	display: block;
+	margin-top: 3px;
+}
+.app_wrapper .main_content .dependents .dependents_full{
+	font-weight: 700;
+}
+.app_wrapper .main_content .dependents .dependents_arabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 13px;
+}
+
+.app_wrapper .main_content .dependents_table{}
+.app_wrapper .main_content .dependents_table #mydependents{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+	font-size: 14px;
+}
+.app_wrapper .main_content .dependents_table #mydependents tr{}
+.app_wrapper .main_content .dependents_table #mydependents tr th{
+	border: 1px solid #000;
+    text-align: center;
+}
+.app_wrapper .main_content .dependents_table #mydependents tr td{
+	border: 1px solid #000;
+	padding: 2px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.app_wrapper .main_content .dependents_table #mydependents tr td:nth-child(1){
+	padding: 10px;
+}
+.app_wrapper .main_content .dependents_table #mydependents tr .relation_table{
+	font-family: "arial-arabic";
+}
+.app_wrapper .main_content .dependents_table #mydependents tr .birthdate_table{
+	font-family: "arial-arabic";
+}
+.app_wrapper .main_content .dependents_table #mydependents tr .gender_table{
+	font-family: "arial-arabic";
+}
+.app_wrapper .main_content .dependents_table #mydependents tr .fullname_table{
+	font-family: "arial-arabic";
+}
+.app_wrapper .main_content .dependents_table #mydependents tr .relation_table span{
+	display: block;
+}
+.app_wrapper .main_content .dependents_table #mydependents tr .birthdate_table span{
+	display: block;
+}
+.app_wrapper .main_content .dependents_table #mydependents tr .gender_table span{
+	display: block;
+}
+.app_wrapper .main_content .dependents_table #mydependents tr .fullname_table span{
+	display: block;
+}
+
+.app_wrapper .main_content .employer{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+	padding-bottom: 3px;
+}
+.app_wrapper .main_content .employer .employer_full{
+	font-weight: 700;
+}
+.app_wrapper .main_content .employer .employer_fullarabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .employer_name{
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-top: 3px;
+	font-weight: 700;
+}
+
+.app_wrapper .main_content .recognition{
+	display: block;
+	margin-top: 3px;
+	width: 100%;
+}
+.app_wrapper .main_content .recognition .recognition_full{
+	width: 60%;
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-weight: 600;
+}
+.app_wrapper .main_content .recognition .recognition_fullarabic{
+	width: 39%;
+	display: block;
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .signature{
+	display: block;
+	margin-top: 5px;
+}
+.app_wrapper .main_content .signature .signature_datefull{
+	margin-right: 30px;
+}
+.app_wrapper .main_content .signature .signature_date{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.app_wrapper .main_content .signature .signature_datearabic{
+	font-family: "arial-arabic";
+	font-size: 12px;
+	margin-right: 2px;
+}
+.app_wrapper .main_content .signature .signature_full{
+	margin-right: 100px;
+}
+.app_wrapper .main_content .signature .signature_fullarabic{
+	font-family: "arial-arabic";
+	font-size: 12px;
+	margin-right: 2px;
+}
+.app_wrapper .main_content .signature .signature_namefull{
+	margin-right: 5px;
+}
+.app_wrapper .main_content .signature .signature_name{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+}
+.app_wrapper .main_content .signature .signature_namearabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .official_only{
+	display: block;
+	margin-top: 5px;
+}
+.app_wrapper .main_content .official_only .official_full{
+	text-decoration: underline;
+	font-weight: 700;
+}
+.app_wrapper .main_content .official_only .official_arabic{
+	font-family: "arialbd";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.app_wrapper .main_content .authorization{
+	display: block;
+	border-bottom: 1px solid #999;
+}
+.app_wrapper .main_content .authorization .hijri_datefull{
+	margin-right: 5px;
+}
+.app_wrapper .main_content .authorization .hijri{
+	font-family: "arialbd";
+	font-size: 16px;
+}
+.app_wrapper .main_content .authorization .hijri_date{
+	font-size: 16px;
+	margin-right: 5px;
+	font-weight: 700;
+}
+.app_wrapper .main_content .authorization .hijri_datearabic{
+	font-family: "arial-arabic";
+	font-size: 12px;
+	margin-right: 5px;
+}
+.app_wrapper .main_content .authorization .authorization_full{
+	margin-right: 10px;
+}
+.app_wrapper .main_content .authorization .authorization_visa{
+	font-family: "arial-arabic";
+}
+.app_wrapper .main_content .authorization .authorization_arabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .company_name{
+	display: block;
+	margin-top: 1px;
+	border-bottom: 1px solid #999;
+}
+.app_wrapper .main_content .company_name .work_for{
+	margin-right: 15px;
+}
+.app_wrapper .main_content .company_name .company_namearabic{
+	font-family: "arialbd";
+	font-size: 16px;
+	text-align: center;
+
+}
+.app_wrapper .main_content .company_name .work_forarabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .visa_info{
+	display: block;
+	margin-top: 1px;
+	border-bottom: 1px solid #999;
+}
+.app_wrapper .main_content .visa_info .visa_date{
+	margin-right: 200px;
+}
+.app_wrapper .main_content .visa_info .visa_datearabic{
+	font-family: "arial-arabic";
+	margin-right: 2px;
+}
+.app_wrapper .main_content .visa_info .visa_nofull{}
+.app_wrapper .main_content .visa_info .visa_nofullarabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .payment{
+	display: block;
+	margin-top: 1px;
+	border-bottom: 1px solid #999;
+}
+.app_wrapper .main_content .payment .fee_collection{
+	text-transform: uppercase;
+	margin-right: 120px;
+}
+.app_wrapper .main_content .payment .fee_collectionarabic{
+	font-family: "arial-arabic";
+	margin-right: 5px;
+}
+.app_wrapper .main_content .payment .visa_type{
+	margin-right: 120px;
+}
+.app_wrapper .main_content .payment .visa_typearabic{
+	font-family: "arial-arabic";
+	margin-right: 5px;
+}
+.app_wrapper .main_content .payment .visa_duration{}
+.app_wrapper .main_content .payment .visa_durationarabic{
+	font-family: "arial-arabic";
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+.app_wrapper .main_content .consular_arabic{
+	display: block;
+	margin-top: 1px;
+}
+.app_wrapper .main_content .consular_arabic .consular_leftarabic{
+	font-family: "arialbd";
+	font-size: 14px;
+	margin-right: 100px;
+	margin-left: 10px;
+}
+.app_wrapper .main_content .consular_arabic .employer_id{
+	margin-right: 5px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+}
+.app_wrapper .main_content .consular_arabic .employer_middlearabic{
+	font-family: "arialbd";
+	font-size: 16px;
+}
+.app_wrapper .main_content .consular_arabic .consular_rightarabic{
+	font-family: "arialbd";
+	font-size: 14px;
+	text-align: right;
+	float: right;
+}
+
+.app_wrapper .main_content .consular_section{
+	display: block;
+}
+.app_wrapper .main_content .consular_section .consular_left{
+	margin-right: 5px;
+	font-weight: 700;
+	display: inline-block;
+	width: 48%;
+}
+.app_wrapper .main_content .consular_section .consular_right{
+	text-align: right;
+	font-weight: 700;
+	display: inline-block;
+	width: 48%;
+}
+
+.app_wrapper .main_content .passport_barcode{
+	text-align: center;
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* Contract Area */
+.contract_area{
+	font-size: 16px;
+	padding-top: 40px;
+	width: 100%;
+}
+.contract_area .contract_headline{
+	display: block;
+	text-align: center;
+	padding-bottom: 20px;
+	width: 100%;
+}
+.contract_area .contract_headline .contract_headlineleft{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: underline;
+	margin-right: 200px;
+}
+.contract_area .contract_headline .contract_headlineright{
+	font-family: "arialbd";
+	font-size: 22px;
+	text-decoration: underline;
+}
+
+.contract_area .contract_header{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.contract_area .contract_header #contract_thead{
+	width: 100%;
+	border-collapse: collapse;
+}
+.contract_area .contract_header #contract_thead tr{}
+.contract_area .contract_header #contract_thead tr th{}
+.contract_area .contract_header #contract_thead tr .left_side{
+	text-align: left;
+	text-transform: uppercase;
+}
+.contract_area .contract_header #contract_thead tr .middle_side{
+	text-align: left;
+	text-transform: uppercase;
+}
+.contract_area .contract_header #contract_thead tr .right_side{
+	text-align: right;
+	font-family: "arialbd";
+	font-size: 18px;
+}
+
+.contract_area .contract_body{}
+.contract_area .contract_body #contract_tbody{}
+.contract_area .contract_body #contract_tbody tr{}
+.contract_area .contract_body #contract_tbody tr td{}
+.contract_area .contract_body #contract_tbody tr .body_left{
+	text-align: justify;
+}
+.contract_area .contract_body #contract_tbody tr .body_right{
+	font-family: "arial-arabic";
+	text-align: right;
+}
+
+.contract_area .contract_footer{}
+.contract_area .contract_footer #footer_contract{}
+.contract_area .contract_footer #footer_contract tr{}
+.contract_area .contract_footer #footer_contract tr td{}
+.contract_area .contract_footer #footer_contract tr .left_footer{}
+.contract_area .contract_footer #footer_contract tr .right_footer{
+	font-family: "arial-arabic";
+}
+
+.contract_area .contract_footer{}

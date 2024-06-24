@@ -1,0 +1,269 @@
+@page {
+   margin: 5mm 5mm 5mm 5mm;
+}
+
+*{padding: 0; margin: 0; outline: 0; color: #000; background-color: #fff;}
+
+.clear{
+	clear: both;
+}
+#selected_option{
+	background-color: #444;
+	color: #fff;
+}
+body{
+	font-family: "roboto";
+	width: 100%;
+	font-size: 16px;
+	color: #3b623b;
+	padding: 0;
+	margin: 0;
+}
+
+.mybody{
+	border: 1px solid #3b623b;
+	padding: 10px;
+	border-bottom: 20px solid #3b623b;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.topheader{
+	display: block;
+}
+.topheader .headerLeft{
+	width: 9%;
+	float: left;
+}
+.topheader .headerLeft img{
+	width: 70%;
+	height: 100px;
+}
+.headerTopcenter{
+	width: 90%;
+	float: right;
+}
+.headercontentarea{
+	width: 100%;
+	float: left;
+}
+.headerTopcenter .headerContent{
+	width: 80%;
+	float: left;
+}
+.headerTopcenter .headerContent .headerTop{}
+.headerTopcenter .headerContent .headerTop .headerTitle{
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: justify;
+}
+.headerTopcenter .headerContent .headerCenter{
+	width: 100%;
+}
+.headerTopcenter .headerContent .headerCenter .headerMiddle{
+	width: 100%;
+}
+.headerTopcenter .headerContent .headerCenter .headerMiddle .headerDes{
+	width: 48%;
+	float: left;
+}
+.headerTopcenter .headerContent .headerCenter .headerMiddle .licenseNo{
+	width: 48%;
+	float: left;
+}
+.headerTopcenter .headerContent .headerCenter .address{
+	width: 100%;
+	color: #000;
+	font-weight: bold;
+	font-size: 17px;
+}
+.headerTopcenter .headerContent .headerBottom .contact{
+	font-family: "times";
+	font-size: 11px;
+	font-weight: bold;
+	width: 100%;
+}
+.headerTopcenter .headerContent .headerBottom .contact .tel{
+	font-family: "times";
+}
+.headerTopcenter .headerContent .headerBottom .contact .cell{
+	font-family: "times";
+}
+.headerTopcenter .headerContent .headerBottom .contact .helpLine{
+	font-family: "times";
+}
+.headerTopcenter .headerContent .headerBottom .web_address{
+	font-family: "times";
+	font-size: 12px;
+	font-weight: bold;
+	width: 100%;
+}
+.headerTopcenter .headerContent .headerBottom .web_address .web{
+	font-family: "times";
+}
+.headerTopcenter .headerContent .headerBottom .web_address .email_address{
+	font-family: "times";
+}
+.headerTopcenter .headerRight{
+	width: 15%;
+	background-color: #3b623b;
+	color: #fff;
+	float: right;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 23px;
+}
+.contentarea{
+	clear: both;
+	width: 100%;
+	padding-top: 20px;
+}
+.contentarea .myContent{}
+.contentarea .myContent .doc_ref{
+	width: 100%;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px;
+}
+.contentarea .myContent .doc_ref .cash_receipt{
+	width: 48%;
+	float: left;
+}
+.contentarea .myContent .doc_ref .cash_date{
+	width: 48%;
+	float: left;
+	text-align: right;
+}
+.contentarea .received_from{
+	padding-top: 10px;
+	padding-bottom: 3px;
+	border-bottom: 1px dotted #3b623b;
+}
+.contentarea .received_from .received_thanks{
+	font-style: italic;
+	width: 28%;
+	float: left;
+}
+.contentarea .received_from .customer_info{
+	width: 70%;
+	float: left;
+	font-weight: bold;
+	font-style: italic;
+	color: #000;
+	font-size: 14px;
+}
+.contentarea .cash_des{
+	border-bottom: 1px dotted #3b623b;
+	padding-top: 10px;
+	padding-bottom: 3px;
+	width: 100%;
+	font-style: italic;
+}
+.contentarea .cash_des .description_for{
+	float: left;
+	width: 69%;
+}
+.contentarea .cash_des .description{
+	color: #000;
+	font-weight: bold;
+}
+.contentarea .cash_des .passport_info{
+	text-align: left;
+	float: right;
+	width: 29%;
+}
+
+.contentarea .cash_des .passport_no{
+	font-weight: bold;
+	color: #000;
+}
+.contentarea .in_word{
+	border-bottom: 1px dotted #3b623b;
+	padding-top: 10px;
+	padding-bottom: 3px;
+	width: 100%;
+	font-style: italic;
+}
+.contentarea .in_word .word_spelling{
+	font-weight: bold;
+	color: #000;
+}
+
+
+.footerContent .system{
+	border-bottom: 1px dotted #3b623b;
+	padding-top: 10px;
+	padding-bottom: 3px;
+	width: 100%;
+	font-style: italic;
+}
+.footerContent .system .system_type{
+	float: left;
+	width: 49%;
+}
+.footerContent .system .system_type .type{
+	color: #000;
+	font-weight: bold;
+}
+.footerContent .system .system_ref{
+	text-align: left;
+	float: right;
+	width: 49%;
+}
+.footerContent .system .system_ref .reference{
+	font-weight: bold;
+	color: #000;
+}
+.contentarea .footerContent .signatory{
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+.contentarea .footerContent .signatory table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+
+
+.contentarea .footerContent .signatory table .amount_type{
+	width: 5%;
+	text-align: center;
+	padding: 8px 0;
+	font-weight: bold;
+	color: #000;
+}
+
+.contentarea .footerContent .signatory table .cash_amount{
+	font-size: 18px;
+	font-weight: bold;
+	border: 1px solid #000;
+	background-color: #6fa36f;
+	color: #000;
+	text-align: center;
+	padding: 8px 0;
+	width: 25%;
+	border-radius: 2px;
+}
+.contentarea .footerContent .signatory table .chairman{
+	text-align: center;
+	margin-left: 25px;
+	text-decoration: overline;
+	color: #000;
+}
+.contentarea .footerContent .signatory table .account{
+	text-align: center;
+	margin-right: 5px;
+	text-decoration: overline;
+	color: #000;
+}
+.centerbody{
+	width: 100%;
+	clear: both;
+	margin: 50px;
+}

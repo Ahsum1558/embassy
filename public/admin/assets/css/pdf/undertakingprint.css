@@ -1,0 +1,115 @@
+@page {
+   margin: 110mm 5mm 5mm 15mm;
+}
+
+*{padding: 0; margin: 0; outline: 0; color: #000; background-color: #fff;}
+
+.clear{
+	clear: both;
+}
+#selected_option{
+	background-color: #444;
+	color: #fff;
+}
+body{
+	font-family: "SolaimanLipi";
+	width: 100%;
+	font-size: 16px;
+}
+.app_wrapper{}
+.app_wrapper .main_content{}
+.app_wrapper .main_content .primary_undertaking{}
+.app_wrapper .main_content .primary_undertaking .undertaking_heading{
+	font-size: 22px;
+	text-decoration: underline;
+	text-align: center;
+}
+.app_wrapper .main_content .undertaking_customers{
+	padding-top: 10px;
+}
+.app_wrapper .main_content .undertaking_customers .customers_table{}
+.app_wrapper .main_content .undertaking_customers .customers_table #customersData{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+.app_wrapper .main_content .undertaking_customers .customers_table #customersData tr{}
+.app_wrapper .main_content .undertaking_customers .customers_table #customersData tr th{
+	border: 1px solid #000;
+   text-align: center;
+   font-family: "kalpurush";
+   font-size: 13px;
+   font-weight: normal;
+}
+.app_wrapper .main_content .undertaking_customers .customers_table #customersData tr td{
+	border: 1px solid #000;
+   text-align: center;
+   text-transform: uppercase;
+	font-family: "roboto";
+	font-size: 10px;
+	padding: 4px;
+}
+.app_wrapper .main_content .undertaking_customers .customers_table #customersData tr td:nth-child(2){
+	 text-align: left;
+}
+.app_wrapper .main_content .undertaking_customers .customers_table #customersData tr td:nth-child(4){
+	 text-align: left;
+}
+.app_wrapper .main_content .undertaking_training{
+	padding-top: 40px;
+}
+.app_wrapper .main_content .undertaking_training .training_table{}
+.app_wrapper .main_content .undertaking_training .training_table #customersData{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+.app_wrapper .main_content .undertaking_training .training_table #customersData tr{}
+.app_wrapper .main_content .undertaking_training .training_table #customersData tr th{
+	border: 1px solid #000;
+   text-align: center;
+   font-family: "kalpurush";
+   font-size: 13px;
+   font-weight: normal;
+}
+.app_wrapper .main_content .undertaking_training .training_table #customersData tr td{
+	border: 1px solid #000;
+   text-align: center;
+   text-transform: uppercase;
+	font-family: "roboto";
+	font-size: 10px;
+	padding: 4px;
+}
+.app_wrapper .main_content .undertaking_training .training_table #customersData tr td:nth-child(2){
+	 text-align: left;
+}
+.app_wrapper .main_content .page_running{
+	padding-top: 30px;
+	font-size: 18px;
+	text-align: right;
+	padding-right: 30px;
+}
+.app_wrapper .main_content .undertaking_main{
+	font-size: 20px;
+}
+.app_wrapper .main_content .undertaking_main .undertaking_info{}
+.app_wrapper .main_content .undertaking_main .undertaking_info .undertaking_page{
+	text-align: center;
+	text-decoration: underline;
+	padding-bottom: 30px;
+	font-size: 22px;
+}
+.app_wrapper .main_content .undertaking_main .undertaking_info .undertaking_content{
+	text-align: justify;
+}
+.app_wrapper .main_content .undertaking_main .undertaking_info .undertaking_content .content_top{}
+.app_wrapper .main_content .undertaking_main .undertaking_info .undertaking_content .content_bottom{}
+.app_wrapper .main_content .undertaking_main .undertaking_info .undertaking_content .content_bottom{}
+.app_wrapper .main_content .undertaking_main .undertaking_info .undertaking_content .content_below{}
+.app_wrapper .main_content .undertaking_main .undertaking_footer{
+	width: 50%;
+	float: right;
+	padding-top: 80px;
+	text-align: left;
+}
+.app_wrapper .main_content .undertaking_main .undertaking_footer .footer_data{}

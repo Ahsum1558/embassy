@@ -1,0 +1,241 @@
+/* Dark */
+body{}
+img.logo-abbr {
+    background: #e5e5e5;
+    border-radius: 5px;
+}
+#main-wrapper{}
+#main-wrapper #header_nav{
+	background-color: #333;
+}
+#main-wrapper #header_na #header_logotitle{
+	color: #fff !important;
+}
+.logo-compact, .brand-title {
+    color: #fff !important;
+}
+.nav-header .brand-title {
+   color: #fff !important;
+}
+#main-wrapper #header_nav #control_nav{}
+#main-wrapper #header_nav #control_na #line_nav{}
+#main-wrapper #nav_menu{
+	background-color: #333;
+}
+[data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .nav-header .nav-control .hamburger .line {
+    background-color: #333 !important;
+}
+[data-headerbg="color_1"] .nav-header .hamburger.is-active .line, [data-headerbg="color_1"] .nav-header .hamburger .line {
+    background: #333 !important;
+}
+[data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a i {
+    color: #333;
+}
+[data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a {
+    background: #fff;
+    color: #333;
+}
+[data-sibebarbg="color_3"] .deznav .metismenu > li > a {
+   color: rgba(255, 255, 255, 0.7);
+}
+[data-sibebarbg="color_3"] .deznav .metismenu a {
+    color: rgba(255, 255, 255, 0.7);
+}
+[data-sibebarbg="color_3"] .deznav .metismenu a.mm-active {
+    color: #e5e5e5;
+}
+[data-headerbg="color_1"] .nav-header .hamburger .line {
+    background: #333 !important;
+}
+#main-wrapper .header{
+	background-color: #e5e5e5;
+}
+#main-wrapper .header .header-left .header_bar{
+	background-color: #333;
+}
+#main-wrapper .header .header-left .header_bar .office_name{
+  color: #fff;
+}
+#main-wrapper .header .header-left .header_bar .licene_no{
+  color: #fff;
+}
+#main-wrapper .header .current_time{
+  color: #333;
+  background-color: #e5e5e5;
+}
+#main-wrapper .header .header-left .header_bar .doc_num{
+  color: #fff;
+}
+
+#main-wrapper .header .header-right .header-info .user_name{
+  color: #333;
+}
+
+#main-wrapper .header .header-right .header-info #ourTime{
+  color: #333;
+}
+.card_line{
+	background-color: #fff;
+	border: 1px solid #333;
+}
+.card_headline{
+	background-color: #333;
+}
+.card_headline .headline{
+	color: #fff;
+}
+.mybtn .submitbtn{
+	background: #333;
+	color: #fff;
+}
+.mybtn .submitbtn:hover{
+	background: #777;
+	color: #fff;
+}
+.mybtn button{
+	background: #333;
+	color: #fff;
+}
+.mybtn button:hover{
+	background: #777;
+	color: #fff;
+}
+#example thead tr th, #example2 thead tr th, #example3 thead tr th, #example4 thead tr th, #example5 thead tr th{
+	background: #333;
+    color: #fff;
+}
+
+file-tab .nav-item .nav-link:hover, .profile-tab .nav-item .nav-link.active {
+    background: #333;
+    border-bottom: 0.2px solid #333;
+    color: #fff;
+}
+.profile-tab .custom-tab-1 ul li a.active {
+    background-color: #333;
+    color: #fff;
+}
+.page-titles h4 {
+    color: #333;
+}
+.profile-info h4 {
+    color: #333 !important;
+}
+.profile-personal-info h4{
+	color: #333 !important;
+	font-weight: bold;
+}
+.settings-form h4{
+	color: #333 !important;
+	font-weight: bold;
+}
+
+.profile-tab .nav-item .nav-link {
+    color: #828690;
+}
+.profile-tab .nav-item .nav-link:hover{
+    border-bottom: 0.2px solid #333;
+    color: #333;
+}
+.profile-tab .nav-item .nav-link.active {
+    border-bottom: 0.2px solid #333;
+    color: #fff;
+}
+.default-tab .nav-link:focus, .default-tab .nav-link:hover, .default-tab .nav-link.active {
+    border-color: #dee2e6 #dee2e6 #fff #ebeef6;
+    color: #333;
+}
+.default-tab .nav-link i {
+    color: #333;
+}
+.basic_headline{
+    border: 1px solid #ddd;
+    background: #666;
+    color: #fff;
+}
+.basic_headline:hover{
+  background: #fff;
+  color: #333;
+}
+.tranprint{
+    background-color: #333;
+    color: #fff;
+}
+.tranprint:hover{
+  color: #fff;
+}
+.img_new{
+  border: 1px solid #333;
+}
+.dashbtn{
+  color: #fff;
+}
+.dashbtn:hover{
+  color: #fff;
+}
+.back_button:hover{
+  background: #777;
+  color: #fff;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover {
+    background: #333;
+    color: #fff !important;
+}
+.datasearch{
+  border: 1px solid #333;
+}
+.transaction{
+    background-color: #333;
+    color: #fff;
+}
+.user_activity{
+  color: #fff;
+  background-color: #333;
+}
+
+[data-sibebarbg="color_3"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu li > ul, [data-sibebarbg="color_3"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li.mm-active > a, [data-sibebarbg="color_3"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li:hover > a {
+    background-color: #333;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #e5e5e5;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #333;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #e5e5e5;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    background-color: #333;
+}
+
+.dashboard_area{}
+.dashboard_area .das_headeing {
+    background-color: #222;
+}
+.dashboard_area .welcome_area{
+  background-color: #e5e5e5;
+}
+
+.dashboard_area .welcome_content{
+  color: #222;
+}

@@ -1,0 +1,77 @@
+@import url('fonts/jost.css');
+@import url('fonts/tangerine.css');
+@import url('fonts/pinyon.css');
+@import url('fonts/roboto.css');
+@import url('fonts/Montserrat.css');
+@import url('fonts/Raleway.css');
+@import url('fonts/worksans.css');
+@import url('fonts/monda.css');
+@import url('fonts/Abel.css');
+@import url('fonts/Barlow.css');
+*{outline: 0; padding: 0; margin: 0;}
+
+
+
+/* Arabic Fonts */
+@font-face{
+	src: url('../fonts/arabic/Amiri-Regular.ttf');
+	font-family: Amiri-Regular;
+}
+@font-face{
+	src: url('../fonts/arabic/LateefRegOT.ttf');
+	font-family: ALateefRegOT;
+}
+@font-face{
+	src: url('../fonts/arabic/Lotus.ttf');
+	font-family: Lotus;
+}
+@font-face{
+	src: url('../fonts/arabic/ScheherazadeRegOT.ttf');
+	font-family: ScheherazadeRegOT;
+}
+@font-face{
+	src: url('../fonts/arabic/Uthmanic.ttf');
+	font-family: Uthmanic;
+}
+
+/* Bangla Fonts */
+@font-face{
+	src: url('../fonts/bangla/kalpurush.ttf');
+	font-family: kalpurush;
+}
+@font-face{
+	src: url('../fonts/bangla/SutonnyMJ.ttf');
+	font-family: SutonnyMJ;
+}
+
+body{
+	font-family: 'Jost', sans-serif;
+	font-family: Uthmanic;
+	font-family: ScheherazadeRegOT;
+	font-family: Amiri-Regular;
+	font-family: ALateefRegOT;
+	font-family: Lotus;
+	font-family: kalpurush;
+	font-family: SutonnyMJ;
+	font-family: 'Tangerine', cursive;
+	font-family: 'Pinyon Script', cursive;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Monda', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	font-family: 'Abel', sans-serif;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	background: url('../images/body_bg3.jpg');
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Jost', sans-serif;
+	text-transform: uppercase;
+}
+a, span{
+	font-family: 'Jost', sans-serif;
+}
+
+p{
+	font-family: 'Work Sans', sans-serif;
+}

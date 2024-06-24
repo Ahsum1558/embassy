@@ -1,0 +1,141 @@
+*{padding: 0; margin: 0; outline: 0;}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px;
+	width: 100%;
+	border-collapse: collapse;
+	height: auto;
+}
+.clear{
+	clear: both;
+}
+.width_40{
+	width: 40%;
+}
+.width_48{
+	width: 48%;
+}
+.float_left{
+	float: left;
+}
+.float_right{
+	float: right;
+}
+.text_center{
+	text-align: center;
+}
+.text_upper{
+	text-transform: uppercase;
+}
+.display_block{
+	display: block;
+}
+.box_border{
+	border: 1px solid #999;
+	box-shadow: 2px 2px 4px rgb(0 0 0 / 35%);
+	padding: 10px;
+}
+.margin_box{
+	margin: 5px;
+}
+.top_margin{
+	margin-top: 15px;
+}
+.top_margin30{
+	margin-top: 30px;
+}
+h2{
+	font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
+	text-align: center;
+}
+.headertop{
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px;
+}
+.descriptiontop{
+	text-align: center;
+	padding-bottom: 5px;
+}
+.descriptiontop .licenseno{
+	font-weight: bold;
+}
+.headeraddress{
+	text-align: center;
+}
+table{
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	clear: both;
+}
+td, th{
+	border: 1px solid #666;
+	padding: 5px;
+	text-align: left;
+}
+.my_table{
+	text-align: left;
+}
+
+.right_table{
+	text-align: right;
+}
+#sign{
+	padding-top: 10px;
+	text-align: right;
+}
+.start_date{
+	font-weight: normal;
+	font-size: 17px;
+	float: left;
+}
+.end_date{
+	font-weight: normal;
+	font-size: 17px;
+	float: right;
+}
+
+.headerInfo{
+	width: 100%;
+	height: auto;
+	display: block;
+	clear: both;
+}
+.accountInfo{
+	text-transform: uppercase;
+	display: block;
+	padding: 5px;
+}
+.leftheader{
+	width: 50%;
+	float: left;
+	clear: both;
+	display: block;
+}
+.accountNo{}
+.bankName{}
+.acctype{}
+.branchLoc{
+	padding-bottom: 10px;
+}
+.rightheader{
+	width: 50%;
+	float: left;
+	display: block;
+}
+.holder{}
+.emailno{}
+.cellno{}
+.summary_table{
+	border: 1px solid #000;
+	margin-top: 40px;
+	padding: 15px;
+	border-radius: 5px;
+}
+.summary_format{
+	width: 100%;
+	padding: 5px;
+	display: block;
+}

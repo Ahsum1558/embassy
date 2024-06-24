@@ -1,0 +1,260 @@
+*{padding: 0; margin: 0; outline: 0;}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px;
+	width: 100%;
+	border-collapse: collapse;
+}
+.mybody{
+	border: 1px solid #3b623b;
+	padding: 10px;
+	border-bottom: 20px solid #3b623b;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.topheader{
+	display: block;
+	clear: both;
+}
+.topheader .headerLeft{
+	width: 10%;
+	float: left;
+}
+.topheader .headerLeft img{
+	width: 80%;
+	height: 100px;
+}
+.headerTopcenter{
+	display: inline-block;
+	width: 90%;
+	float: left;
+}
+.headercontentarea{
+	width: 100%;
+}
+.headerTopcenter .headerContent{
+	width: 80%;
+	display: inline-block;
+}
+.headerTopcenter .headerContent .headerTop{
+	margin-top: 20px;
+}
+.headerTopcenter .headerContent .headerTop .headerTitle{
+	text-transform: uppercase;
+	color: #3b623b;
+	font-size: 25px;
+	font-weight: bolder;
+	font-family: "Jost", sans-serif;
+	text-align: justify;
+}
+.headerTopcenter .headerContent .headerCenter p{
+	color: #3b623b;
+}
+.headerTopcenter .headerContent .headerCenter .address{
+	font-size: 18px;
+}
+.headerTopcenter .headerContent .headerBottom .contact{
+	font-size: 12px;
+	color: #3b623b;
+	font-weight: 600;
+}
+.headerTopcenter .headerContent .headerBottom .web_address{
+	font-size: 13px;
+	color: #3b623b;
+	font-weight: 600;
+}
+.headerTopcenter .headerRight{
+	width: 15%;
+	background-color: #3b623b;
+	color: #fff;
+	float: right;
+	top: 0;
+	padding: 10px;
+	text-align: center;
+}
+.headerTopcenter .headerRight .note{
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+.contentarea{
+	clear: both;
+	width: 100%;
+	display: block;
+}
+.contentarea .myContent{}
+.contentarea .myContent .doc_ref{
+	width: 100%;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 20px;
+	color: #3b623b;
+	clear: both;
+	padding: 10px;
+	display: block;
+}
+.contentarea .doc_ref .cash_receipt{
+	float: left;
+	text-align: left;
+	width: 40%;
+}
+.contentarea .doc_ref .cash_date{
+	text-align: right;
+	float: right;
+	width: 40%;
+	right: 0;
+}
+.contentarea .received_from{
+	clear: both;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 3px;
+	border-bottom: 1px dotted #3b623b;
+}
+.contentarea .received_from .received_thanks{
+	font-style: italic;
+	font-size: 16px;
+	color: #3b623b;
+}
+.contentarea .received_from .cust_name, .contentarea .received_from .agent, .contentarea .received_from .customer{
+	font-size: 16px;
+	font-weight: 700;
+	font-style: italic;
+}
+.contentarea .cash_des{}
+.contentarea .cash_des .description_for{
+	font-style: italic;
+	font-size: 16px;
+	color: #3b623b;
+	float: left;
+	text-align: left;
+	width: 70%;
+	border-bottom: 1px dotted #3b623b;
+	padding-top: 10px;
+	padding-bottom: 3px;
+}
+.contentarea .cash_des .passport_info{
+	font-style: italic;
+	font-size: 16px;
+	color: #3b623b;
+	text-align: left;
+	float: right;
+	width: 30%;
+	right: 0;
+	border-bottom: 1px dotted #3b623b;
+	padding-top: 10px;
+	padding-bottom: 3px;
+}
+.contentarea .cash_des .description{
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	font-style: italic;
+}
+.contentarea .cash_des .passport_no{
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	font-style: italic;
+}
+.contentarea .in_word{
+	font-style: italic;
+	font-size: 16px;
+	color: #3b623b;
+	border-bottom: 1px dotted #3b623b;
+	padding-top: 10px;
+	padding-bottom: 3px;
+}
+.contentarea .in_word .word_spelling{
+	font-size: 16px;
+	font-weight: 700;
+	font-style: italic;
+	color: #000;
+}
+.contentarea .footerContent .system{}
+.contentarea .footerContent .system .system_type{
+	font-style: italic;
+	font-size: 16px;
+	color: #3b623b;
+	float: left;
+	text-align: left;
+	width: 50%;
+	border-bottom: 1px dotted #3b623b;
+	padding-top: 10px;
+	padding-bottom: 3px;
+}
+.contentarea .footerContent .system .system_ref{
+	font-style: italic;
+	font-size: 16px;
+	color: #3b623b;
+	text-align: left;
+	float: right;
+	width: 50%;
+	right: 0;
+	border-bottom: 1px dotted #3b623b;
+	padding-top: 10px;
+	padding-bottom: 3px;
+}
+.contentarea .footerContent .system .type{
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	font-style: italic;
+}
+.contentarea .footerContent .system .reference{
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	font-style: italic;
+}
+.contentarea .footerContent .signatory{
+	width: 100%;
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	clear: both;
+	padding-top: 25px;
+	padding-bottom: 5px;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+.contentarea .footerContent .signatory .amount_type{
+	width: 5%;
+	text-align: center;
+	padding: 8px 0;
+}
+
+.contentarea .footerContent .signatory .cash_amount{
+	font-size: 18px;
+	font-weight: 700;
+	border: 1px solid #000;
+	background-color: #6fa36f;
+	text-align: center;
+	padding: 8px 0;
+	width: 25%;
+	border-radius: 2px;
+	margin: 0 5px;
+}
+.contentarea .footerContent .signatory .chairman{
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 25px;
+	margin-left: 25px;
+	text-decoration: overline;
+}
+.contentarea .footerContent .signatory .account{
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 25px;
+	margin-right: 5px;
+	text-decoration: overline;
+}
+.centerbody{
+	width: 100%;
+	clear: both;
+	margin: 100px;
+}
