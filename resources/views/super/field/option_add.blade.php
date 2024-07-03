@@ -21,7 +21,7 @@
                                         <div class="col-3">
                                             <h5 class="f-w-500">Logo <span class="pull-right">:</span></h5>
                                         </div>
-                                        <div class="col-9"><input type="file" name="logo" class="form-control d-inline-block inline_setup" placeholder="Enter Title">
+                                        <div class="col-9"><input type="file" name="logo" class="form-control d-inline-block inline_setup">
                                         </div>
                                     </div>
 

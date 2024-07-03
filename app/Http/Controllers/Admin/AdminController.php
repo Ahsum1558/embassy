@@ -20,21 +20,21 @@ use App\Models\Division;
 use App\Models\District;
 use App\Models\Policestation;
 use App\Models\City;
+use App\Models\Slider;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
 class AdminController extends Controller
 {
-
     public function index(){
-        $data = User::latest() -> get(); // as latest
+        $data = User::latest() -> get();
+        $all_slider = Slider::latest() -> get();
         if (Auth::check() && Auth::user()->status === 'active') {
-            return view('admin.home.index');
+            return view('admin.home.index', compact('data', 'all_slider'));
         }elseif(Auth::check() && Auth::user()->status !== 'active') {
             Auth::logout();
             return redirect('/login')->with(['error_message' => 'Your account is inactive. Please contact the administrator.']);
         }
-        
     }
 
     public function login(){

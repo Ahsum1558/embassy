@@ -9,6 +9,7 @@ use App\Http\Controllers\Super\HeaderfooterController;
 use App\Http\Controllers\Super\SuperuserController;
 use App\Http\Controllers\Super\UserPaymentController;
 use App\Http\Controllers\Super\MaintenanceController;
+use App\Http\Controllers\Super\SliderController;
 use App\Http\Controllers\Super\Auth\AuthenticatedSessionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -102,44 +103,44 @@ Route::group(['middleware' => 'super'], function() {
 });
 // Meta Area End
 
-// English Site Option Area Start
+// Site Option Area Start
 Route::group(['middleware' => 'super'], function() {
-    // Super English Site Option Home Page
+    // Super Site Option Home Page
     Route::get('/super/field', [FieldController::class, 'index'])->name('super.field');
     Route::post('/super/field/store', [FieldController::class, 'store'])->name('super.field.store');
 
     Route::get('/super/field/show/{id}', [FieldController::class, 'show'])->name('super.field.show');
 
-    // English Site Option Info Update
+    // Site Option Info Update
     Route::get('/super/field/edit/{id}', [FieldController::class, 'edit'])->name('super.field.edit');
     Route::post('/super/field/update/{id}', [FieldController::class, 'update'])->name('super.field.update');
 
-    // English Site Option Title Update
+    // Site Option Title Update
     Route::get('/super/field/editTitle/{id}', [FieldController::class, 'editTitle'])->name('super.field.editTitle');
     Route::post('/super/field/updateTitle/{id}', [FieldController::class, 'updateTitle'])->name('super.field.updateTitle');
 
-    // English Site Option Small Title Update
+    // Site Option Small Title Update
     Route::get('/super/field/editSmallTitle/{id}', [FieldController::class, 'editSmallTitle'])->name('super.field.editSmallTitle');
     Route::post('/super/field/updateSmallTitle/{id}', [FieldController::class, 'updateSmallTitle'])->name('super.field.updateSmallTitle');
 
-    // English Site Option License Update
+    // Site Option License Update
     Route::get('/super/field/editLicense/{id}', [FieldController::class, 'editLicense'])->name('super.field.editLicense');
     Route::post('/super/field/updateLicense/{id}', [FieldController::class, 'updateLicense'])->name('super.field.updateLicense');
 
-    // English Site Option Logo Update
+    // Site Option Logo Update
     Route::get('/super/field/editLogo/{id}', [FieldController::class, 'editLogo'])->name('super.field.editLogo');
     Route::post('/super/field/updateLogo/{id}', [FieldController::class, 'updateLogo'])->name('super.field.updateLogo');
 
-    // English Site Option Delete
+    // Site Option Delete
     Route::get('/super/field/destroy/{id}', [FieldController::class, 'destroy'])->name('super.field.destroy');
 
-    // English Site Option Inactive
+    // Site Option Inactive
     Route::post('/super/field/inactive/{id}', [FieldController::class, 'inactive'])->name('super.field.inactive');
 
-    // English Site Option Active
+    // Site Option Active
     Route::post('/super/field/active/{id}', [FieldController::class, 'active'])->name('super.field.active');
 });
-// English Site Option Area End
+// Site Option Area End
 
 // Header and Footer Setting Area Start
 Route::group(['middleware' => 'super'], function() {
@@ -166,6 +167,37 @@ Route::group(['middleware' => 'super'], function() {
     Route::post('/super/setting/active/{id}', [HeaderfooterController::class, 'active'])->name('super.setting.active');
 });
 // Header and Footer Setting Area End
+
+// Slider Field Area Start
+Route::group(['middleware' => 'super'], function() {
+    // Super Slider Field Home Page
+    Route::get('/super/slider', [SliderController::class, 'index'])->name('super.slider');
+
+    // Slider Field Create
+    Route::get('/super/slider/create', [SliderController::class, 'create'])->name('super.slider.create');
+    Route::post('/super/slider/store', [SliderController::class, 'store'])->name('super.slider.store');
+
+    // Slider Field Display
+    Route::get('/super/slider/show/{id}', [SliderController::class, 'show'])->name('super.slider.show');
+
+    // Slider Field Info Update
+    Route::get('/super/slider/edit/{id}', [SliderController::class, 'edit'])->name('super.slider.edit');
+    Route::post('/super/slider/update/{id}', [SliderController::class, 'update'])->name('super.slider.update');
+
+    // Slider Field Image Update
+    Route::get('/super/slider/editSlider/{id}', [SliderController::class, 'editSlider'])->name('super.slider.editSlider');
+    Route::post('/super/slider/updateSlider/{id}', [SliderController::class, 'updateSlider'])->name('super.slider.updateSlider');
+
+    // Slider Field Delete
+    Route::get('/super/slider/destroy/{id}', [SliderController::class, 'destroy'])->name('super.slider.destroy');
+
+    // Slider Field Inactive
+    Route::post('/super/slider/inactive/{id}', [SliderController::class, 'inactive'])->name('super.slider.inactive');
+
+    // Slider Field Active
+    Route::post('/super/slider/active/{id}', [SliderController::class, 'active'])->name('super.slider.active');
+});
+// Slider Field Area End
 
 // Super Operator Area Start
 Route::group(['middleware' => 'super'], function() {

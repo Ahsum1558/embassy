@@ -207,11 +207,43 @@
 	background: #e8850df2;
 	color: #fff;
 }
+.slider_area{}
+.img_slider{
+  max-height: 350px;
+}
+.slider_option{
+  background: #DD2F6E;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.slider_head{
+  font-weight: bold;
+  color: #fff;
+  font-size: 25px;
+}
+.slider_head:hover{
+  color: #cbffcb;
+}
+.slider_text{
+  display: block;
+  font-size: 18px;
+  color: #cbffcb;
+  line-height: 1.12;
+  text-align: justify;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 5px;
+}
+.slider_text:hover{
+  color: #fff;
+}
 #main-wrapper .header .header-right .header-info{
 	/* border: none; */
 }
 #main-wrapper .header .header-right .header-info{}
 #main-wrapper .header .header-right {}
+
 
 
 #example, #example2, #example3, #example4, #example5{

@@ -153,6 +153,11 @@ php artisan make:controller Locaton/CityController --resource
 php artisan make:model City -m
 php artisan make:controller Admin/AdminuserController --resource
 php artisan make:mail ResetPasswordEmail
+php artisan make:controller Super/SliderController --resource
+php artisan make:model Slider -m
+
+
+
 
 composer require spatie/pdf-to-text
 composer require phpoffice/phpword
@@ -947,10 +952,14 @@ echo "/vendor
 .vscode" > .gitignore
 git add .
 git commit -m "Initial commit of Manpower Related Laravel project"
-git remote add origin git remote add origin https://github.com/Ahsum1558/embassy.git
+git remote add origin https://github.com/Ahsum1558/embassy.git
 git push -u origin main
 
 git checkout -b "copy-branch"
 git checkout main
 git branch -D copy-branch
 git branch
+
+git add .
+git commit -m "Slider Option Added in Home Page"
+git push -u origin main

@@ -35,6 +35,38 @@
               </span>
             </h4>
         </div>
+        <div class="row">
+          <div class="col-xl-11 text-center m-auto">
+            <div class="card">
+                <div class="card-body p-4 slider_area">
+                    <div class="bootstrap-carousel">
+                        <div data-ride="carousel" class="carousel slide" id="carouselExampleCaptions">
+                            <ol class="carousel-indicators">
+                                @foreach($all_slider as $index => $slider)
+                                    <li data-slide-to="{{ $index }}" data-target="#carouselExampleCaptions" class="{{ $index == 0 ? 'active' : '' }}"></li>
+                                @endforeach
+                            </ol>
+                            <div class="carousel-inner">
+                                @foreach($all_slider as $index => $slider)
+                                    <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+                                        <a href="{{ $slider->img_url }}">
+                                            <img alt="" class="d-block w-100 img_slider" src="{{ url('public/admin/uploads/slider/'.$slider->slide_img) }}">
+                                        </a>
+                                        <div class="d-none d-block slider_option">
+                                            <h5 class="slider_head">{{ $slider->slide_head }}</h5>
+                                            <a class="slider_text" href="{{ $slider->des_url }}">{{ $slider->slide_des }}</a>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                            <a data-slide="prev" href="#carouselExampleCaptions" class="carousel-control-prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a>
+                            <a data-slide="next" href="#carouselExampleCaptions" class="carousel-control-next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
         <div class="row welcome_content mr-1 ml-1">
           <p>Congratulations on being part of the team ! The whole company welcomes you and we look forward to a successful journey with you !</p>
         </div>

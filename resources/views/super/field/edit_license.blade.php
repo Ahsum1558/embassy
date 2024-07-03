@@ -7,7 +7,7 @@
     <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0)">Site Option</a></li>
-            <li class="breadcrumb-item"><a href="javascript:void(0)">Option in English</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Field Area</a></li>
             <li class="breadcrumb-item active"><a href="javascript:void(0)">Update License</a></li>
         </ol>
     </div>
@@ -16,7 +16,7 @@
     <div class="col-12">
         <div class="card card_line">
             <div class="card-header card_headline">
-                <h4 class="card-title headline">Update Site Option License Number Info</h4>
+                <h4 class="card-title headline">Update Field Area License Number Info</h4>
             </div>
             <div class="card-body">
 @include('super.includes.alert')

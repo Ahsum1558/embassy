@@ -7,7 +7,7 @@
     <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0)">Site Option</a></li>
-            <li class="breadcrumb-item"><a href="javascript:void(0)">Option in English</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Field Area</a></li>
             <li class="breadcrumb-item active"><a href="javascript:void(0)">Option Details</a></li>
         </ol>
     </div>
@@ -17,10 +17,10 @@
     <div class="col-xl-12 col-lg-12">
         <div class="card card_line">
             <div class="card-header card_headline">
-               <h4 class="card-title headline">English Site Option Details</h4>
+               <h4 class="card-title headline">Field Area Details</h4>
             </div>
             <div class="card-body">
-                <h4 class="mb-4 basic_headline">Site Option Info</h4>
+                <h4 class="mb-4 basic_headline">Field Area Info</h4>
                 <div class="profile-uoloaded-post border-bottom-1 pb-5">
                     <div class="row">
                         <div class="col-xl-3 ">

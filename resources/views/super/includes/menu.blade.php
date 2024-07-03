@@ -49,7 +49,8 @@
                     <span class="nav-text">Site Option</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{ route('super.field') }}">Option in English</a></li>
+                    <li><a href="{{ route('super.field') }}">Field Area</a></li>
+                    <li><a href="{{ route('super.slider') }}">Home Slider</a></li>
                 </ul>
             </li>
             <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
