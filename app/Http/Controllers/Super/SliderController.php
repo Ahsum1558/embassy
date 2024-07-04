@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Super;
 use App\Models\Slider;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class SliderController extends Controller
 {

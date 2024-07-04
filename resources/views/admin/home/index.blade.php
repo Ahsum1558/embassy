@@ -35,6 +35,9 @@
               </span>
             </h4>
         </div>
+        <div class="row welcome_content mr-1 ml-1">
+          <p>Congratulations on being part of the team ! The whole company welcomes you and we look forward to a successful journey with you !</p>
+        </div>
         <div class="row">
           <div class="col-xl-11 text-center m-auto">
             <div class="card">
@@ -54,7 +57,7 @@
                                         </a>
                                         <div class="d-none d-block slider_option">
                                             <h5 class="slider_head">{{ $slider->slide_head }}</h5>
-                                            <a class="slider_text" href="{{ $slider->des_url }}">{{ $slider->slide_des }}</a>
+                                            <a class="slider_text" href="{{ $slider->des_url }}">{{ Str::limit($slider->slide_des, 400) }}</a>
                                         </div>
                                     </div>
                                 @endforeach
@@ -67,9 +70,7 @@
             </div>
           </div>
         </div>
-        <div class="row welcome_content mr-1 ml-1">
-          <p>Congratulations on being part of the team ! The whole company welcomes you and we look forward to a successful journey with you !</p>
-        </div>
+        
       </div>
     </div>
   </div>

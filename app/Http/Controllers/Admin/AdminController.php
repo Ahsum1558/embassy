@@ -23,12 +23,13 @@ use App\Models\City;
 use App\Models\Slider;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class AdminController extends Controller
 {
     public function index(){
         $data = User::latest() -> get();
-        $all_slider = Slider::latest() -> get();
+        $all_slider = Slider::latest()->where('status','=',1) -> get();
         if (Auth::check() && Auth::user()->status === 'active') {
             return view('admin.home.index', compact('data', 'all_slider'));
         }elseif(Auth::check() && Auth::user()->status !== 'active') {

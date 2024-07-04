@@ -29,6 +29,7 @@
                           <tr>
                               <th>SL</th>
                               <th>Heading</th>
+                              <th>Description</th>
                               <th>Image</th>
                               <th>Status</th>
                               <th>Action</th>
@@ -41,7 +42,8 @@
                       @foreach($all_slider as $slider)
                         <tr>
                             <td>{{ $i++ }}</td>
-                            <td>{{ $slider->slide_head }}</td>
+                            <td><a href="{{ route('super.slider.show', ['id'=>$slider->id]) }}">{{ Str::limit($slider->slide_head, 50) }}</a></td>
+                            <td>{{ Str::limit($slider->slide_des, 50) }}</td>
                             <td><img class="img-fluid" src="{{ (!empty($slider->slide_img)) ? url('public/admin/uploads/slider/'.$slider->slide_img) : url('public/admin/assets/images/avatar.png') }}" width="100" alt=""></td>
                             <td>
                               @if($slider->status == 1)

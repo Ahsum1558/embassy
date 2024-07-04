@@ -961,5 +961,5 @@ git branch -D copy-branch
 git branch
 
 git add .
-git commit -m "Slider Option Added in Home Page"
+git commit -m "Slider Option Modified"
 git push -u origin main

@@ -207,14 +207,28 @@
 	background: #e8850df2;
 	color: #fff;
 }
-.slider_area{}
+.slider_area{
+  border: 1px solid #DD2F6E;
+  box-sizing: border-box;
+  box-shadow: 3px 2px 4px 1px #DD2F6E;
+  border-radius: 10px;
+}
 .img_slider{
   max-height: 350px;
 }
 .slider_option{
-  background: #DD2F6E;
-  padding: 5px;
-  margin-bottom: 20px;
+  background: #1c1a1bb0;
+  padding: 10px;
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  left: 0%;
+  z-index: 10;
+  padding-bottom: 25px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.78);
+  border-radius: 10px;
 }
 .slider_head{
   font-weight: bold;
