@@ -36,7 +36,11 @@
             </h4>
         </div>
         <div class="row welcome_content mr-1 ml-1">
-          <p>Congratulations on being part of the team ! The whole company welcomes you and we look forward to a successful journey with you !</p>
+            <p>Congratulations on being part of the team ! The whole company welcomes you and we look forward to a successful journey with you !
+                @if(Auth::check() && (Auth::user()->title === NULL || Auth::user()->license === NULL || Auth::user()->title_bn === NULL || Auth::user()->license_bn === NULL || Auth::user()->title_ar === NULL || Auth::user()->license_ar === NULL))
+                <a href="{{ route('admin.profile.create') }}" class="text-info text-uppercase font-weight-bold">Please fill out the Office Information</a>
+            @endif
+            </p>
         </div>
         <div class="row">
           <div class="col-xl-11 text-center m-auto">

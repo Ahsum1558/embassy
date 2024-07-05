@@ -961,5 +961,5 @@ git branch -D copy-branch
 git branch
 
 git add .
-git commit -m "Slider Option Modified"
+git commit -m "Slider CSS Modified"
 git push -u origin main
