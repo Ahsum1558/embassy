@@ -56,7 +56,7 @@
                             <div class="col-9"><input type="text" name="cusLname" class="form-control d-inline-block inline_setup" placeholder="Enter Last Name" value="{{ old('cusLname') }}">
                             </div>
                         </div>
-                        <div class="row mb-2">
+                       {{--  <div class="row mb-2">
                             <div class="col-3">
                                 <h5 class="f-w-500">Gender<span class="pull-right">:</span></h5>
                             </div>
@@ -70,6 +70,18 @@
                                 <span class="form-check d-inline-block mr-2">
                                     <input type="radio" name="gender" value="3" {{ old('gender') == 3 ? 'checked' : '' }} class="form-check-input">Other
                                 </span>
+                            </div>
+                        </div> --}}
+                        <div class="row mb-2">
+                            <div class="col-3">
+                                <h5 class="f-w-500">Gender<span class="pull-right">:</span></h5>
+                            </div>
+                            <div class="col-9">
+                                @foreach ($genders as $gender)
+                                <span class="form-check d-inline-block mr-2">
+                                    <input type="radio" name="gender" value="{{ $gender->value }}" {{ old('gender') == $gender->value ? 'checked' : '' }} class="form-check-input">{{ $gender->genderDes() }}
+                                </span>
+                                @endforeach
                             </div>
                         </div>
                         <div class="row mb-2">

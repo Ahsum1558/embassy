@@ -1,0 +1,793 @@
+
+
+
+php artisan make:model TravelSetup -m
+php artisan make:controller Super/TravelSetupController --resource
+php artisan make:controller Super/TravelCmspageController --resource
+php artisan make:model TravelCmspage -m
+php artisan make:middleware Travel
+php artisan make:provider Custom/TravelServiceProvider
+php artisan make:controller Travel/TravelController
+php artisan make:controller Travel/TraveluserController --resource
+php artisan make:controller Locaton/TravelCountryController --resource
+php artisan make:controller Locaton/TravelDivisionController --resource
+php artisan make:controller Locaton/TravelDistrictController --resource
+php artisan make:controller Locaton/TravelPolicestationController --resource
+php artisan make:controller Locaton/TravelCityController --resource
+
+php artisan make:controller Client/FavorAgentController --resource
+php artisan make:model FavorAgent -m
+php artisan make:model AccountSetup -m
+php artisan make:model AccountCmspage -m
+php artisan make:controller Super/AccountSetupController --resource
+php artisan make:controller Super/AccountCmspageController --resource
+php artisan make:provider Custom/AccountServiceProvider
+php artisan make:middleware Account
+php artisan make:controller Account/AccountSetupController
+php artisan make:controller Account/AccountuserController --resource
+php artisan make:controller Locaton/AccountCountryController --resource
+php artisan make:controller Locaton/AccountDivisionController --resource
+php artisan make:controller Locaton/AccountDistrictController --resource
+php artisan make:controller Locaton/AccountPolicestationController --resource
+php artisan make:controller Locaton/AccountCityController --resource
+
+
+php artisan make:model AccountCategory -m
+php artisan make:controller Account/AccountCategoryController --resource
+
+php artisan make:model AccountSubCategory -m
+php artisan make:controller Account/AccountSubCategoryController --resource
+
+
+
+
+php artisan make:model BankAccount -m
+php artisan make:controller Account/BankAccountController --resource
+php artisan make:model MobileAccount -m
+php artisan make:controller Account/MobileAccountController --resource
+php artisan make:model RecruitmentBankAccount -m
+php artisan make:controller Account/RecruitmentBankAccountController --resource
+php artisan make:model RecruitmentMobileAccount -m
+php artisan make:controller Account/RecruitmentMobileAccountController --resource
+php artisan make:model TravelBankAccount -m
+php artisan make:controller Account/TravelBankAccountController --resource
+php artisan make:model TravelMobileAccount -m
+php artisan make:controller Account/TravelMobileAccountController --resource
+php artisan make:model Account -m
+php artisan make:controller Account/AccountController --resource
+php artisan make:model SisterAccount -m
+php artisan make:controller Account/SisterAccountController --resource
+php artisan make:model TravelSisterAccount -m
+php artisan make:controller Account/TravelSisterAccountController --resource
+
+php artisan make:model Asset -m
+php artisan make:controller Office/AssetController --resource
+php artisan make:model DepreciateAsset -m
+php artisan make:controller Office/DepreciateAssetController --resource
+
+
+
+
+php artisan make:model Employee -m
+php artisan make:controller Employee/EmployeeController --resource
+php artisan make:model EmployeeEmergency -m
+php artisan make:controller Employee/EmployeeEmergencyController --resource
+php artisan make:model EmployeeBank -m
+php artisan make:controller Employee/EmployeeBankController --resource
+
+php artisan make:model SalaryIncrement -m
+php artisan make:controller Employee/SalaryIncrementController --resource
+
+php artisan make:model Accountant -m
+php artisan make:controller Employee/AccountantController --resource
+
+php artisan make:controller Account/Client/AccountDelegateController --resource
+php artisan make:controller Account/Client/AccountFavorController --resource
+
+php artisan make:controller Account/Client/AccountCustomerController --resource
+
+php artisan make:model RlDebitInvoice -m
+php artisan make:controller Account/Invoice/RlDebitInvoiceController --resource
+
+php artisan make:model RlDebit -m
+php artisan make:controller Account/Invoice/RlDebitController --resource
+
+
+
+
+php artisan make:model RlCreditInvoice -m
+php artisan make:controller Account/Invoice/RlCreditInvoiceController --resource
+
+php artisan make:model AirportOrigin -m
+php artisan make:controller Travel/AirportOriginController --resource
+
+php artisan make:model AirportArrival -m
+php artisan make:controller Travel/AirportArrivalController --resource
+
+php artisan make:model Airlines -m
+php artisan make:controller Travel/AirlinesController --resource
+
+php artisan make:model Flight -m
+php artisan make:controller Travel/FlightController --resource
+
+php artisan make:model AvailabilityApproval -m
+php artisan make:controller Travel/AvailabilityApprovalController --resource
+
+
+
+
+
+
+php artisan migrate
+
+
+php artisan make:model DebitTransaction -m
+php artisan make:controller Account/DebitTransactionController --resource
+php artisan make:model CreditTransaction -m
+php artisan make:controller Account/CreditTransactionController --resource
+
+currency_type
+national
+foreign
+currency_rate
+foreign_amount
+'effective_date' => $request->effective_date,
+
+Administrative Expenses
+Conveyance & Transportation
+Repair & Maintenance
+Printing & Stationery
+Entertainment
+Newspaper & Periodical
+Business Owner Personal Expenses
+Loan
+Office Equipment
+
+Salaries and wages cost employees engaged in finance, accounts, human resources, information technology division, etc.
+Office maintenance cost.
+General Repairs and maintenance costs.
+Finance and insurance cost.
+Insurance Costs
+IT Services Cost
+Building Rent and Maintenance Costs
+
+
+class Asset extends Model
+{
+    protected $fillable = ['name', 'category', 'purchase_date'];
+
+    public function maintenanceRecords()
+    {
+        return $this->hasMany(MaintenanceRecord::class);
+    }
+
+    public function expirations()
+    {
+        return $this->hasMany(Expiration::class);
+    }
+}
+
+php artisan make:model Asset
+php artisan make:model MaintenanceRecord
+php artisan make:model Expiration
+
+
+php artisan make:controller AssetController
+php artisan make:controller MaintenanceRecordController
+php artisan make:controller ExpirationController
+
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+public function up()
+{
+    Schema::create('expirations', function (Blueprint $table) {
+        $table->id();
+        $table->unsignedBigInteger('asset_id');
+        $table->foreign('asset_id')->references('id')->on('assets')->onDelete('cascade');
+        $table->string('expiration_type');
+        $table->date('expiration_date');
+        $table->text('details');
+        $table->timestamps();
+    });
+}
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+public function up()
+{
+    Schema::create('maintenance_records', function (Blueprint $table) {
+        $table->id();
+        $table->unsignedBigInteger('asset_id');
+        $table->foreign('asset_id')->references('id')->on('assets')->onDelete('cascade');
+        $table->date('maintenance_date');
+        $table->text('description');
+        $table->decimal('cost', 10, 2);
+        $table->timestamps();
+    });
+}
+
+public function maintenanceRecords()
+{
+    return $this->hasMany(Maintenance::class);
+}
+
+public function expirations()
+{
+    return $this->hasMany(Expiry::class);
+}
+
+public function asset()
+{
+    return $this->belongsTo(Asset::class);
+}
+
+
+
+
+
+
+
+Customer Activity
+customerId
+reportId
+activity_type
+activity_details
+payment_rate
+payment_info
+status
+
+Customer Report
+favorId
+report_type (send/return)
+report_date
+receiver
+sender
+carrier
+status
+
+
+$incomeTotal = Transaction::where('type', 'income')->sum('amount');
+$expenseTotal = Transaction::where('type', 'expense')->sum('amount');
+
+
+
+ALTER TABLE `assets` CHANGE `quantity` `asset_bar` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL;
+
+
+
+
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Account;
+use App\Models\DebitTransaction;
+use App\Models\CreditTransaction;
+
+class TransactionController extends Controller
+{
+    public function create()
+    {
+        $accounts = Account::all();
+        return view('transactions.create', compact('accounts'));
+    }
+
+    public function store(Request $request)
+    {
+        $account_id = $request->input('account_id');
+        $amount = $request->input('amount');
+        $description = $request->input('description');
+
+        if ($request->input('type') == 'debit') {
+            $debitTransaction = new DebitTransaction([
+                'account_id' => $account_id,
+                'amount' => $amount,
+                'description' => $description,
+            ]);
+            $debitTransaction->save();
+
+            $account = Account::find($account_id);
+            $account->balance -= $amount;
+            $account->save();
+        } elseif ($request->input('type') == 'credit') {
+            $creditTransaction = new CreditTransaction([
+                'account_id' => $account_id,
+                'amount' => $amount,
+                'description' => $description,
+            ]);
+            $creditTransaction->save();
+
+            $account = Account::find($account_id);
+            $account->balance += $amount;
+            $account->save();
+        }
+
+        return redirect('/')->with('success', 'Transaction recorded successfully.');
+    }
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Transaction</title>
+</head>
+<body>
+    <h1>Create Transaction</h1>
+    <form method="POST" action="/transaction/store">
+        @csrf
+        <label for="account_id">Select Account:</label>
+        <select name="account_id">
+            @foreach ($accounts as $account)
+                <option value="{{ $account->id }}">{{ $account->account_number }}</option>
+            @endforeach
+        </select><br>
+        <label for="type">Transaction Type:</label>
+        <select name="type">
+            <option value="debit">Debit</option>
+            <option value="credit">Credit</option>
+        </select><br>
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount"><br>
+        <label for="description">Description:</label>
+        <input type="text" name="description"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Account;
+use App\Models\DebitTransaction;
+use App\Models\CreditTransaction;
+
+class TransactionController extends Controller
+{
+    public function create()
+    {
+        $accounts = Account::all();
+        return view('transactions.create', compact('accounts'));
+    }
+
+    public function store(Request $request)
+    {
+        $account_id = $request->input('account_id');
+        $amount = $request->input('amount');
+        $description = $request->input('description');
+
+        if ($request->input('type') == 'debit') {
+            $transaction = new DebitTransaction([
+                'account_id' => $account_id,
+                'amount' => $amount,
+                'description' => $description,
+            ]);
+        } elseif ($request->input('type') == 'credit') {
+            $transaction = new CreditTransaction([
+                'account_id' => $account_id,
+                'amount' => $amount,
+                'description' => $description,
+            ]);
+        }
+
+        $transaction->save();
+
+        $account = Account::find($account_id);
+        $account->balance += ($transaction->isDebit() ? -$amount : $amount);
+        $account->save();
+
+        return redirect('/')->with('success', 'Transaction recorded successfully.');
+    }
+}
+
+
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Account;
+use App\Models\DebitTransaction;
+use App\Models\CreditTransaction;
+
+class TransactionController extends Controller
+{
+    public function create()
+    {
+        $accounts = Account::all();
+        return view('transactions.create', compact('accounts'));
+    }
+
+    public function store(Request $request)
+    {
+        $account_id = $request->input('account_id');
+        $amount = $request->input('amount');
+        $description = $request->input('description');
+        $type = $request->input('type');
+
+        if ($type == 'debit') {
+            $transaction = new DebitTransaction([
+                'account_id' => $account_id,
+                'amount' => $amount,
+                'description' => $description,
+            ]);
+        } elseif ($type == 'credit') {
+            $transaction = new CreditTransaction([
+                'account_id' => $account_id,
+                'amount' => $amount,
+                'description' => $description,
+            ]);
+        }
+
+        $transaction->save();
+
+        $account = Account::find($account_id);
+        $account->balance += ($transaction->isDebit() ? -$amount : $amount);
+        $account->save();
+
+        return redirect('/')->with('success', 'Transaction recorded successfully.');
+    }
+
+    public function getBankAccounts()
+    {
+        $bankAccounts = Account::where('category_id', '<bank_category_id_here>')->get();
+        return response()->json($bankAccounts);
+    }
+}
+
+<script>
+function loadBankAccounts() {
+    var type = $('#type').val();
+    if (type === 'bank') {
+        $.get('/get-bank-accounts', function(data) {
+            var options = '<option value="">Select Bank Account</option>';
+            data.forEach(function(account) {
+                options += '<option value="' + account.id + '">' + account.account_number + '</option>';
+            });
+            $('#account_id').html(options);
+        });
+    } else {
+        $('#account_id').html('');
+    }
+}
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Transaction</title>
+</head>
+<body>
+    <h1>Create Transaction</h1>
+    <form method="POST" action="/transaction/store">
+        @csrf
+        <label for="account_id">Select Account:</label>
+        <select name="account_id" id="account_id">
+            <!-- Options will be populated dynamically -->
+        </select><br>
+        <label for="type">Transaction Type:</label>
+        <select name="type" id="type" onchange="loadBankAccounts()">
+            <option value="debit">Debit</option>
+            <option value="credit">Credit</option>
+            <option value="bank">Bank</option>
+        </select><br>
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount"><br>
+        <label for="description">Description:</label>
+        <input type="text" name="description"><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+It seems like you've provided a detailed list of commands you used to set up controllers, models, migrations, seeders, and other components for your Laravel project. You mentioned that your project is an account management system. If you're looking for suggestions on how to improve or expand your project, here are some ideas:
+
+Authentication and Authorization: Ensure that you have a robust authentication system in place. Laravel provides a built-in authentication system, but you can further customize it to suit your project's needs. Implement role-based authorization to control access to different parts of the system.
+
+User Profile Management: Allow users to manage their profiles, including updating personal information, changing passwords, and uploading avatars.
+
+Account Categories: It looks like you've created an AccountCategory model. You can expand on this by allowing users to categorize their accounts. This could be useful for organizing and filtering accounts.
+
+please suggest me best Account Categories for Account management system in laravel 10 all details with example
+
+Transaction Management: Implement a feature to record and manage financial transactions. You already have models for DebitTransaction and CreditTransaction. You can build on this foundation to create a full-fledged transaction management system.
+
+please suggest me best Transaction Management for Account management system in laravel 10 all details with example
+
+Reports and Analytics: Consider adding reporting and analytics features to help users gain insights into their accounts and financial data. Laravel provides tools like charts and graphs libraries that can be integrated into your project.
+
+please suggest me best Reports and Analytics for Account management system in laravel 10 all details with example
+
+Notifications and Alerts: Implement a notification system to alert users about important account activities or events, such as low balances or upcoming payments.
+
+please suggest me best Notifications and Alerts for Account management system in laravel 10 all details with example
+
+File Management: If users need to attach documents or receipts to transactions or accounts, create a file management system that allows them to upload and manage files securely.
+
+please suggest me best File Management for Account management system in laravel 10 all details with example
+
+API Integration: If your project interacts with external financial systems or services, consider implementing API integrations to automate data retrieval and synchronization.
+
+please suggest me best API Integration for Account management system in laravel 10 all details with example
+
+Multi-Currency Support: If your users deal with multiple currencies, make sure your system can handle currency conversion and display account balances in different currencies.
+
+please suggest me best Multi-Currency Support for Account management system in laravel 10 all details with example
+
+Backup and Data Recovery: Implement regular data backups and a data recovery mechanism to prevent data loss.
+
+please suggest me best Backup and Data Recovery for Account management system in laravel 10 all details with example
+
+Testing and Validation: Write unit tests and validation rules to ensure data integrity and security.
+
+User Documentation: Create user documentation or tutorials to help users navigate and make the most of your system.
+
+User Feedback: Implement a feedback mechanism to collect user suggestions and bug reports. This can help you continuously improve your system.
+
+Security: Pay special attention to security, including input validation, SQL injection prevention, and securing sensitive data.
+
+Scalability: As your project grows, ensure that it can handle increased data and user loads. Consider using caching mechanisms and optimizing database queries for performance.
+
+User Roles and Permissions: Depending on the complexity of your project, you may need to implement more granular roles and permissions to control access to specific features and data.
+
+Responsive Design: Ensure that your project's frontend is responsive and works well on various devices and screen sizes.
+
+Accessibility: Make your project accessible to users with disabilities by following accessibility best practices.
+
+Internationalization and Localization: If your project has a global user base, consider implementing internationalization and localization to support multiple languages and regions.
+
+Continuous Improvement: Regularly update and maintain your project to fix bugs, add new features, and stay up-to-date with Laravel and other dependencies.
+
+Remember that the features you add should align with the specific needs of your users and the goals of your account management system. It's important to prioritize features based on user feedback and business requirements.
+
+
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateFilesTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('files', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('path');
+            $table->unsignedBigInteger('user_id');
+            $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('files');
+    }
+}
+
+php artisan make:model File
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class File extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'path',
+        'user_id',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
+
+<form action="{{ route('files.store') }}" method="POST" enctype="multipart/form-data">
+    @csrf
+    <input type="file" name="file">
+    <button type="submit">Upload File</button>
+</form>
+
+public function store(Request $request)
+{
+    $request->validate([
+        'file' => 'required|mimes:pdf,doc,docx|max:2048',
+    ]);
+
+    $file = $request->file('file');
+    $fileName = time() . '_' . $file->getClientOriginalName();
+    $filePath = $file->storeAs('uploads', $fileName);
+
+    File::create([
+        'name' => $fileName,
+        'path' => $filePath,
+        'user_id' => auth()->user()->id,
+    ]);
+
+    return redirect()->route('files.index')
+        ->with('success', 'File uploaded successfully.');
+}
+
+@foreach ($files as $file)
+    <a href="{{ route('files.download', $file->id) }}">{{ $file->name }}</a>
+@endforeach
+
+public function download($id)
+{
+    $file = File::findOrFail($id);
+    return response()->download(storage_path('app/' . $file->path));
+}
+
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AddCurrencyToTransactions extends Migration
+{
+    public function up()
+    {
+        Schema::table('transactions', function (Blueprint $table) {
+            $table->string('currency')->default('USD');
+        });
+    }
+
+    public function down()
+    {
+        Schema::table('transactions', function (Blueprint $table) {
+            $table->dropColumn('currency');
+        });
+    }
+}
+
+php artisan make:service CurrencyExchangeService
+
+namespace App\Services;
+
+class CurrencyExchangeService
+{
+    public function convert($amount, $fromCurrency, $toCurrency)
+    {
+        // Implement logic to fetch exchange rates and convert the amount
+        // Example:
+        $exchangeRate = 1.2; // Replace with the actual exchange rate
+        return $amount * $exchangeRate;
+    }
+}
+
+php artisan make:migration add_currency_to_users
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AddCurrencyToUsers extends Migration
+{
+    public function up()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('currency')->default('USD');
+        });
+    }
+
+    public function down()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('currency');
+        });
+    }
+}
+
+$userCurrency = auth()->user()->currency;
+$transactionAmount = $transaction->amount;
+$convertedAmount = $currencyExchangeService->convert($transactionAmount, $transaction->currency, $userCurrency);
+
+$userCurrency = auth()->user()->currency;
+$formattedAmount = number_format($convertedAmount, 2) . ' ' . $userCurrency;
+
+
+
+
+
+
+
+
+
+
+
+
+composer global require cretueusebiu/valet-windows
+Valet install
+composer global require “laravel/installer”
+laravel new blog
+Valet park
+valet link
+
+
+Important Valet Commands
+· Install Valet :
+
+Ios:
+
+composer global require laravel/valet
+
+Win:
+
+composer global require cretueusebiu/valet-windows
+
+• Upgrade Valet:
+
+valet stop
+
+valet uninstall
+
+composer global require laravel/valet
+
+OR
+
+composer global require cretueusebiu/valet-windows
+
+• Restart/Start Valet:
+
+valet restart
+
+valet start
+
+• Register a working directory
+
+valet park
+
+· Remove a “parked” directory from the parked directory list
+
+Valet forget
+
+• View all “parked” paths
+
+valet paths
+
+• Navigate project / Create Symbolic link
+
+valet link app-name
+
+• Destroy Symbolic link
+
+valet unlink app-name
+
+• Secure Laravel
+
+valet secure laravel
+
+• Unsecure Laravel
+
+valet unsecure laravel
+
+• Share local site with all
+
+valet share
+
+• Stop sharing
+
+Control + C
+
+
+

@@ -38,6 +38,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Hash;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Carbon;
+use App\Enums\GenderEnum;
 
 class CustomerShortController extends Controller
 {
@@ -116,6 +117,7 @@ class CustomerShortController extends Controller
             $total_customer = CustomerEmbassy::where('visaId', $visaId)->where('userId', $userId)->count();
             $visaCounts[$visaId] = $total_customer;
         }
+        $genders = GenderEnum::cases();
 
         if(Auth::check() && (Auth::user()->title || Auth::user()->license || Auth::user()->title_bn || Auth::user()->license_bn || Auth::user()->title_ar || Auth::user()->license_ar)){
             return view('admin.client.customer.short.createShort', [
@@ -126,6 +128,7 @@ class CustomerShortController extends Controller
                 'all_district'=>$all_district,
                 'all_visa'=>$all_visa,
                 'visaCounts'=>$visaCounts,
+                'genders'=>$genders,
             ]);
         }else{
             return redirect('/customer/insertShort');
@@ -140,13 +143,8 @@ class CustomerShortController extends Controller
             'userId'=>$userId,
         ])->first();
 
-        $existingBook = Customer::where([
-            'bookRef'=>$request->bookRef,
-            'userId'=>$userId,
-        ])->first();
-
-        if ($existingBook || $existingPassportNo) {
-            return redirect()->back()->with('error_message', 'Passport Number or Book Reference Number already exists in the table!');
+        if ($existingPassportNo) {
+            return redirect()->back()->with('error_message', 'Passport Number already exists in the table!');
         }
         $this->validation($request);
         $tday = new DateTime(date('Y-m-d'));
@@ -321,12 +319,14 @@ class CustomerShortController extends Controller
         $userId = Auth::user()->id;
         $customer_data_info = Customer::where('userId', $userId)->find($id);
         $all_district = District::where('status', 1)->orderBy('districtname', 'asc')->get();
+        $genders = GenderEnum::cases();
 
         if(Auth::check() && (Auth::user()->title || Auth::user()->license || Auth::user()->title_bn || Auth::user()->license_bn || Auth::user()->title_ar || Auth::user()->license_ar)){
             if ($customer_data_info !== null) {
                 return view('admin.client.customer.short.editShort', [
                 'customer_data_info'=>$customer_data_info,
                 'all_district'=>$all_district,
+                'genders'=>$genders,
             ]);
             }else{
                 return redirect('/customer');
@@ -467,7 +467,7 @@ class CustomerShortController extends Controller
             'cusFname'      => 'required',
             'passportNo'    => 'required',
             'birthPlace'    => 'required|exists:districts,id',
-            'gender'        => 'required|in:1,2,3',
+            'gender'        => ['required', Rule::enum(GenderEnum::class)],
             'musaned'        => 'required',
             'father'         => 'required',
             'mother'         => 'required',
@@ -513,7 +513,7 @@ class CustomerShortController extends Controller
             'cusFname'      => 'required',
             'birthPlace'    => 'required|exists:districts,id',
             'status'        => 'required|in:1,0',
-            'gender'        => 'required|in:1,2,3',
+            'gender'        => ['required', Rule::enum(GenderEnum::class)],
             'medical'       => 'required|in:1,2,3,4,5',
             'medical_update' => 'required|in:0,1',
         ],

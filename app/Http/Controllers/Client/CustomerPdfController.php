@@ -42,6 +42,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Hash;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Carbon;
+use App\Enums\GenderEnum;
 
 class CustomerPdfController extends Controller
 {
@@ -64,6 +65,12 @@ class CustomerPdfController extends Controller
         $embassy_single_data = $this->getEmbassyDetails($id)->where('userId', $userId);
         $stamping_single_docs = CustomerVisa::where('customerId', $id)->where('userId', $userId)->get();
         $rate_single_docs = CustomerRate::where('customerId', $id)->where('userId', $userId)->get();
+        $customer_single_data->transform(function ($customer) {
+            if (isset($customer->gender)) {
+                $customer->gender = GenderEnum::tryFrom($customer->gender);
+            }
+            return $customer;
+        });
 
         if($customer_single_data->count() > 0  && isset($customer_single_data[0]) && $customer_single_data[0]->status == 1){
             $output = view('admin.client.customer.pdf.print', [

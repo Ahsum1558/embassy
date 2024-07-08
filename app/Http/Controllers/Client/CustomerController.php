@@ -38,6 +38,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Hash;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Carbon;
+use App\Enums\GenderEnum;
 
 class CustomerController extends Controller
 {
@@ -76,6 +77,7 @@ class CustomerController extends Controller
         $all_delegate = Delegate::where('userId', $userId)->orderBy('agentname', 'asc')->get();
         $all_country = Country::where('status', 1)->orderBy('countryname', 'asc')->get();
         $all_district = District::where('status', 1)->orderBy('districtname', 'asc')->get();
+        $genders = GenderEnum::cases();
         if(Auth::check() && (Auth::user()->title || Auth::user()->license || Auth::user()->title_bn || Auth::user()->license_bn || Auth::user()->title_ar || Auth::user()->license_ar)){
             return view('admin.client.customer.primary.create', [
                 'customer_data'=>$customer_data,
@@ -83,6 +85,7 @@ class CustomerController extends Controller
                 'all_delegate'=>$all_delegate,
                 'all_country'=>$all_country,
                 'all_district'=>$all_district,
+                'genders'=>$genders,
             ]);
         }else{
             return redirect('/customer');
@@ -192,6 +195,13 @@ class CustomerController extends Controller
         $stamping_single_docs = $this->getStampingDetails($id)->where('userId', $userId);
         $rate_single_docs = CustomerRate::where('customerId', $id)->where('userId', $userId)->get();
 
+        $customer_single_data->transform(function ($customer) {
+            if (isset($customer->gender)) {
+                $customer->gender = GenderEnum::tryFrom($customer->gender);
+            }
+            return $customer;
+        });
+
         if($customer_single_data->count() > 0){
             return view('admin.client.customer.primary.show', [
             'customer_single_data'=>$customer_single_data,
@@ -226,6 +236,7 @@ class CustomerController extends Controller
         $all_delegate = Delegate::where('userId', $userId)->orderBy('agentname', 'asc')->get();
         $all_country = Country::where('status', 1)->orderBy('countryname', 'asc')->get();
         $all_district = District::where('status', 1)->orderBy('districtname', 'asc')->get();
+        $genders = GenderEnum::cases();
 
         if(Auth::check() && (Auth::user()->title || Auth::user()->license || Auth::user()->title_bn || Auth::user()->license_bn || Auth::user()->title_ar || Auth::user()->license_ar)){
             if ($customer_data_info !== null) {
@@ -235,6 +246,7 @@ class CustomerController extends Controller
                 'all_delegate'=>$all_delegate,
                 'all_country'=>$all_country,
                 'all_district'=>$all_district,
+                'genders'=>$genders,
             ]);
             }else{
                 return redirect('/customer');
@@ -587,7 +599,7 @@ class CustomerController extends Controller
             'countryFor'    => 'required|exists:countries,id',
             'received'      => 'required|date',
             'status'        => 'required|in:1,0',
-            'gender'        => 'required|in:1,2,3',
+            'gender'        => ['required', Rule::enum(GenderEnum::class)],
             'medical'       => 'required|in:1,2,3,4,5',
         ],
         [
@@ -622,7 +634,7 @@ class CustomerController extends Controller
             'birthPlace'    => 'required|exists:districts,id',
             'agentId'       => 'required|exists:delegates,id',
             'status'        => 'required|in:1,0',
-            'gender'        => 'required|in:1,2,3',
+            'gender'        => ['required', Rule::enum(GenderEnum::class)],
             'medical'       => 'required|in:1,2,3,4,5',
             'medical_update' => 'required|in:0,1',
             'tradeId'       => 'required|exists:visatrades,id',

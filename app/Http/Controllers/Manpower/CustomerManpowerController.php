@@ -41,6 +41,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Hash;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Carbon;
+use App\Enums\GenderEnum;
 
 class CustomerManpowerController extends Controller
 {
@@ -133,6 +134,12 @@ class CustomerManpowerController extends Controller
         }
         $userId = Auth::user()->id;
         $manpower_display = $this->getCustomersDetails($id)->where('userId', $userId);
+        $manpower_display->transform(function ($customer) {
+            if (isset($customer->gender)) {
+                $customer->gender = GenderEnum::tryFrom($customer->gender);
+            }
+            return $customer;
+        });
         
         if($manpower_display->count() > 0 && ($manpower_display[0]->value == 3 || $manpower_display[0]->value == 4)){
             return view('admin.client.manpower.display', compact('manpower_display'));

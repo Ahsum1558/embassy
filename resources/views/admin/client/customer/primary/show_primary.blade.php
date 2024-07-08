@@ -56,7 +56,21 @@
                             </div>
                             <div class="row mb-2">
                                 <div class="col-3">
-                                    <h5 class="f-w-500">Gender <span class="pull-right">:</span></h5>
+                                    <h5 class="f-w-500">Gender<span class="pull-right">:</span></h5>
+                                </div>
+                                <div class="col-9">
+                                    <span>
+                                        @if ($customer_single_data[0]->gender instanceof \App\Enums\GenderEnum)
+                                            {{ $customer_single_data[0]->gender->genderDes() }}
+                                        @else
+                                            {{ $customer_single_data[0]->gender }}
+                                        @endif
+                                    </span>
+                                </div>
+                            </div>
+                            {{-- <div class="row mb-2">
+                                <div class="col-3">
+                                    <h5 class="f-w-500">Gender<span class="pull-right">:</span></h5>
                                 </div>
                                 <div class="col-9"><span>
                                     @if($customer_single_data[0]->gender == 1)
@@ -68,7 +82,7 @@
                                     @endif
                                 </span>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="row mb-2">
                                 <div class="col-3">
                                     <h5 class="f-w-500">Phone Number<span class="pull-right">:</span></h5>

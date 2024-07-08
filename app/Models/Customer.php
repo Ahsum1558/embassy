@@ -4,11 +4,25 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Enums\GenderEnum;
 
 class Customer extends Model
 {
     use HasFactory;
     protected $guarded = [];
+    protected $casts = [
+        'gender' => GenderEnum::class,
+    ];
+
+    public function getGenderAttribute($value)
+    {
+        return GenderEnum::tryFrom($value);
+    }
+
+    public function setGenderAttribute($value)
+    {
+        $this->attributes['gender'] = $value instanceof GenderEnum ? $value->value : $value;
+    }
 
     public function customerDocoment()
     {

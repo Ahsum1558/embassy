@@ -39,8 +39,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Hash;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Carbon;
-
-
+use App\Enums\GenderEnum;
 
 class SubmissionCustomerController extends Controller
 {
@@ -115,6 +114,13 @@ class SubmissionCustomerController extends Controller
         }
         $userId = Auth::user()->id;
         $customer_display = $this->getCustomersDetails($id)->where('userId', $userId);
+
+        $customer_display->transform(function ($customer) {
+            if (isset($customer->gender)) {
+                $customer->gender = GenderEnum::tryFrom($customer->gender);
+            }
+            return $customer;
+        });
 
         if($customer_display->count() > 0){
             return view('admin.client.submission.display', compact('customer_display'));

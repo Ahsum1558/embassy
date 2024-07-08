@@ -175,10 +175,10 @@
                                 <tr>
                                     <td>পে-অর্ডার নং- {{ $numto->bnNum($payment->welfareInsuranceNo) }}</td>
                                     <td>তারিখঃ {{ $data->convertToBanglaNumber($insurance_date) }}</td>
-                                    <td>টাকাঃ- {{ $numto->bnNum($payment->welfareInsurance*$payment->customerNumber) }}/-</td>
+                                    <td>টাকাঃ- {{ $numto->bnNum($payment->welfareInsurance) }}/-</td>
                                     <td>আয়কর চালান নং- {{ $numto->bnNum($payment->incomeTaxNo) }}</td>
                                     <td>তারিখঃ {{ $data->convertToBanglaNumber($income_tax_date) }}</td>
-                                    <td>টাকাঃ- {{ $numto->bnNum($payment->incomeTax*$payment->customerNumber) }}/-</td>
+                                    <td>টাকাঃ- {{ $numto->bnNum($payment->incomeTax) }}/-</td>
                                 </tr>
                             @endforeach
                             </tbody>

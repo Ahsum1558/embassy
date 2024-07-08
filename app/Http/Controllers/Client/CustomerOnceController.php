@@ -38,6 +38,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Hash;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Carbon;
+use App\Enums\GenderEnum;
 
 class CustomerOnceController extends Controller
 {
@@ -117,6 +118,7 @@ class CustomerOnceController extends Controller
         $customer_embassy = CustomerEmbassy::latest()->where('userId','=',$userId) -> get();
         $all_visa = Visa::latest()->where('status','=',1)->where('userId','=',$userId) -> get();
         $all_visa_type = Visatype::where('status', 1)->orderBy('visatype_name', 'asc')->get();
+        $genders = GenderEnum::cases();
         $visaCounts = [];
         foreach ($all_visa as $visa) {
             $visaId = $visa->id;
@@ -140,6 +142,7 @@ class CustomerOnceController extends Controller
                 'all_visa'=>$all_visa,
                 'all_visa_type'=>$all_visa_type,
                 'visaCounts'=>$visaCounts,
+                'genders'=>$genders,
             ]);
         }else{
             return redirect('/customer/insertOnce');
@@ -365,7 +368,7 @@ class CustomerOnceController extends Controller
             'countryFor'    => 'required|exists:countries,id',
             'received'      => 'required|date',
             'status'        => 'required|in:1,0',
-            'gender'        => 'required|in:1,2,3',
+            'gender'        => ['required', Rule::enum(GenderEnum::class)],
             'medical'       => 'required|in:1,2,3,4,5',
             'tc'             => 'required',
             'pc'             => 'required',

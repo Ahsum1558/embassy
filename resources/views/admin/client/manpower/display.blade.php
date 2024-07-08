@@ -130,6 +130,20 @@
                                     </div>
                                 </div>
                                 <div class="row mb-2">
+                                <div class="col-3">
+                                    <h5 class="f-w-500">Gender<span class="pull-right">:</span></h5>
+                                </div>
+                                <div class="col-9">
+                                    <span>
+                                        @if ($manpower_display[0]->gender instanceof \App\Enums\GenderEnum)
+                                            {{ $manpower_display[0]->gender->genderDes() }}
+                                        @else
+                                            {{ $manpower_display[0]->gender }}
+                                        @endif
+                                    </span>
+                                </div>
+                            </div>
+                                {{-- <div class="row mb-2">
                                     <div class="col-3">
                                         <h5 class="f-w-500">Gender <span class="pull-right">:</span></h5>
                                     </div>
@@ -143,7 +157,7 @@
                                         @endif
                                     </span>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="row mb-2">
                                     <div class="col-3">
                                         <h5 class="f-w-500">Status<span class="pull-right">:</span></h5>

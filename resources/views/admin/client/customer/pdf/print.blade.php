@@ -85,21 +85,41 @@
         </div>
 @endforeach
         <div class="social_status clear">
-@if($customer_single_data[0]->gender == 1)
-            <div class="gender_full">Sex:</div>
-            <div class="gender_selection">
-                <div class="gender_female">Female <span>أنثى</span></div>
-                <div id="selected_option" class="gender_male">Male <span id="selected_option">ذكر</span></div>
-            </div>
-            <div class="gender_arabic">:الجنس</div>
-@elseif($customer_single_data[0]->gender == 2)
-            <div class="gender_full">Sex:</div>
-            <div class="gender_selection">
-                <div id="selected_option" class="gender_female">Female <span>أنثى</span></div>
-                <div class="gender_male">Male <span>ذكر</span></div>
-            </div>
-            <div class="gender_arabic">:الجنس</div>
+
+
+@if ($customer_single_data[0]->gender instanceof \App\Enums\GenderEnum)
+    {{ $customer_single_data[0]->gender->genderDes() }}
+
+    @if($customer_single_data[0]->gender === \App\Enums\GenderEnum::MALE)
+        <div class="gender_full">Sex:</div>
+        <div class="gender_selection">
+            <div class="gender_female">Female <span>أنثى</span></div>
+            <div id="selected_option" class="gender_male">Male <span id="selected_option">ذكر</span></div>
+        </div>
+        <div class="gender_arabic">:الجنس</div>
+    @elseif($customer_single_data[0]->gender === \App\Enums\GenderEnum::FEMALE)
+        <div class="gender_full">Sex:</div>
+        <div class="gender_selection">
+            <div id="selected_option" class="gender_female">Female <span>أنثى</span></div>
+            <div class="gender_male">Male <span>ذكر</span></div>
+        </div>
+        <div class="gender_arabic">:الجنس</div>
+    @elseif($customer_single_data[0]->gender === \App\Enums\GenderEnum::OTHER)
+        <div class="gender_full">Sex:</div>
+        <div class="gender_selection">
+            <div class="gender_female">Female <span>أنثى</span></div>
+            <div class="gender_male">Male <span>ذكر</span></div>
+            <div id="selected_option" class="gender_other">Other <span id="selected_option">آخر</span></div>
+        </div>
+        <div class="gender_arabic">:الجنس</div>
+    @endif
+
+@else
+    {{ $customer_single_data[0]->gender }}
 @endif
+
+
+
 @foreach ($passport_single_data as $passport_data)
 @if($passport_data->maritalStatus == 1)
             <div class="marital_statusfull">Marital Status: </div>
@@ -685,10 +705,20 @@
                         <td class="td_bn">লিঙ্গ</td>
                         <td></td>
                         <td></td>
-@if($customer_single_data[0]->gender == 1)
+
+@if ($customer_single_data[0]->gender instanceof \App\Enums\GenderEnum)
+    {{ $customer_single_data[0]->gender->genderDes() }}
+
+@if($customer_single_data[0]->gender === \App\Enums\GenderEnum::MALE)
                         <td class="td_data">Male</td>
-@elseif($customer_single_data[0]->gender == 2)
+@elseif($customer_single_data[0]->gender === \App\Enums\GenderEnum::FEMALE)
                         <td class="td_data">Female</td>
+@elseif($customer_single_data[0]->gender === \App\Enums\GenderEnum::OTHER)
+                        <td class="td_data">Other</td>
+@endif
+
+@else
+    {{ $customer_single_data[0]->gender }}
 @endif
                         <td class="td_ar">الجنس</td>
                     </tr>
