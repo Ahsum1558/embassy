@@ -13,9 +13,15 @@ composer update
 composer diagnose
 
 composer create-project laravel/laravel manpower
+composer create-project laravel/laravel authProject
+laravel new customAuth
+
+
+
 
 composer require laravel/breeze --dev
 php artisan breeze:install
+php artisan breeze:install vue
  
 php artisan migrate
 npm install
@@ -37,14 +43,112 @@ php artisan migrate
 php artisan make:factory SuperFactory
 php artisan make:factory AdminFactory
 
+
+php artisan make:model Role -m
+php artisan make:model Permission -m
+php artisan make:migration create_role_user_table --create=role_user
+php artisan make:migration create_users_permission_table --create=users_permissions
+php artisan make:migration create_roles_permission_table --create=roles_permissions
+php artisan make:migration create_users_roles_table --create=users_roles
+php artisan make:provider PermissionServiceProvider
+php artisan make:controller UserController --resource --model=User
+php artisan make:resource UserResource
+php artisan ui bootstrap --auth
+
+
+composer create-project laravel/laravel authNew
+composer require laravel/breeze --dev
+php artisan breeze:install
+php artisan make:model Admin -m
+php artisan make:model Attachment -m
+php artisan make:middleware Admin
+php artisan make:seeder AdminsTableSeeder
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+
+$table->string('group_name')->nullable();
+
+
+php artisan make:controller Admin/AdminLoginController --resource
+php artisan make:controller Admin/AdminController --resource
+php artisan make:controller Admin/Authorization/AdminPermissionController --resource
+php artisan make:controller Admin/Authorization/AdminRoleController --resource
+php artisan make:controller Admin/Authorization/AdminUserController --resource
+php artisan make:controller Admin/Authorization/AdminProfileController --resource
+php artisan make:controller Admin/AdminThemeController --resource
+
+php artisan make:request AssignRoleRequest
+
+
+
+
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+
+
+
+
+php artisan make:component TextInput
+php artisan make:component AdminPageHeader
+php artisan make:component ConfirmationModal
+php artisan make:component DeleteModal
+php artisan make:component TableSearchForm
+
+php artisan make:request PermissionRequest
+php artisan make:request RoleRequest
+php artisan make:request Admin/AdminRequest
+php artisan make:request Admin/AdminLoginRequest
+php artisan make:request Admin/ProfileRequest
+php artisan make:request Admin/PasswordRequest
+php artisan make:request Admin/EmailRequest
+php artisan make:request Admin/UsernameRequest
+
+mkdir -p app/Http/Controllers/Admin/API
+php artisan make:model Attachment -m
+
+
+php artisan make:seeder AdminPermissionSeeder
+php artisan make:seeder AdminUserSeeder
+php artisan make:enum Enums/GenderType --string
+php artisan make:enum ApplicationStatus --string
+php artisan make:enum StatusEnum --string
+php artisan make:enum PermissionGroup --string
+php artisan make:enum RoleEnum --string
+
+UniqueEmailForUser
+UniqueUser
+php artisan cache:table
+php artisan make:command AdminConstant
+php artisan make:constant MasterConstant
+
+
+New-Item -Path "FileManageHelper.php" -ItemType "File"
+
+
+
+mkdir -p resources/fonts
+
+
+
+
 php artisan optimize
 php artisan route:cache  
 php artisan config:cache
 php artisan route:clear
-php artisan optimize:clear
 php artisan cache:clear  
 php artisan config:clear  
 php artisan view:clear
+php artisan optimize:clear
+
+
+composer clear-cache
+
+php artisan key:generate
+composer require --dev --prefer-source --dev kitloong/laravel-migrations-generator
+
+composer require --dev kitloong/laravel-migrations-generator
+php artisan migrate:generate
+
 
 php artisan make:controller Super/FieldController --resource
 php artisan make:controller Super/FieldarController --resource
@@ -78,9 +182,8 @@ php artisan make:controller Admin/AdminuserController --resource
 php artisan make:mail ResetPasswordEmail
 php artisan make:controller Super/SliderController --resource
 php artisan make:model Slider -m
-php artisan make:enum Enums/GenderEnum --string
 
-mkdir -p resources/fonts
+
 
 
 
@@ -148,6 +251,9 @@ php artisan make:provider PhpWordServiceProvider
 
 
 
+php-S localhost:8000
+http://localhost:8000/generate.php
+
 
 
 
@@ -167,6 +273,6 @@ git branch -D copy-branch
 git branch
 
 git add .
-git commit -m "Required Field Added to Visa Info"
+git commit -m "Theme Setup Updated"
 git push -u origin main
 

@@ -26,7 +26,32 @@
                         <div class="product-detail-content">
                             <!--Product details-->
                             <div class="new-arrival-content pr">
+                            @php
+                                $themes = [
+                                    'default' => 'Default',
+                                    'pink' => 'Pink',
+                                    'blue' => 'Blue',
+                                    'blue_light' => 'Light Blue',
+                                    'brown' => 'Brown',
+                                    'green' => 'Green',
+                                    'mint' => 'Mint',
+                                    'purple' => 'Purple',
+                                    'violet' => 'Violet',
+                                    'dark' => 'Dark',
+                                ];
+                            @endphp
+                            @foreach ($themes as $value => $label)
                                 <div class="row mb-2">
+                                    <div class="col-3">
+                                        <h5 class="f-w-500">{{ $label }}<span class="pull-right">:</span></h5>
+                                    </div>
+                                    <div class="col-9"><span><input {{ $superData->theme === $value ? 'checked' : '' }} type="radio" name="theme" value="{{ $value }}"> {{ $label }}</span>
+                                    </div>
+                                </div>
+                            @endforeach
+
+
+                                {{-- <div class="row mb-2">
                                     <div class="col-3">
                                         <h5 class="f-w-500">Default<span class="pull-right">:</span></h5>
                                     </div>
@@ -88,7 +113,7 @@
                                     </div>
                                     <div class="col-9"><span><input {{ $superData->theme === 'dark' ? 'checked' : '' }} type="radio" name="theme" value="dark"> Dark</span>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="row mb-2">
                                 <div class="col-3"></div>
