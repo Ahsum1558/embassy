@@ -29,6 +29,9 @@
                             @php
                                 $themes = [
                                     'default' => 'Default',
+                                    'dark' => 'Dark',
+                                    'gray' => 'Gray',
+                                    'bright' => 'Bright',
                                     'pink' => 'Pink',
                                     'blue' => 'Blue',
                                     'blue_light' => 'Light Blue',
@@ -37,7 +40,6 @@
                                     'mint' => 'Mint',
                                     'purple' => 'Purple',
                                     'violet' => 'Violet',
-                                    'dark' => 'Dark',
                                 ];
                             @endphp
                             @foreach ($themes as $value => $label)

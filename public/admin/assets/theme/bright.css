@@ -1,169 +1,162 @@
-/* Dark */
+/* Bright */
 body{
-    background: #444;
+    background: #f8f8f8;
 }
 img.logo-abbr {
-    background: #fff;
+    background: gray;
     border-radius: 5px;
 }
 #main-wrapper{}
 #main-wrapper #header_nav{
-    background-color: #222;
+    background-color: #fff;
 }
 #main-wrapper #header_na #header_logotitle{
-    color: #fff !important;
+    color: gray !important;
 }
 .logo-compact, .brand-title {
-    color: #fff !important;
+    color: gray !important;
 }
 .nav-header .brand-title {
-   color: #fff !important;
+   color: gray !important;
 }
 #main-wrapper #header_nav #control_nav{}
 #main-wrapper #header_nav #control_na #line_nav{}
 #main-wrapper #nav_menu{
-    background-color: #222;
+    background-color: #fff;
 }
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .nav-header .nav-control .hamburger .line {
-    background-color: #fff !important;
+    background-color: #444 !important;
 }
 [data-headerbg="color_1"] .nav-header .hamburger.is-active .line, [data-headerbg="color_1"] .nav-header .hamburger .line {
-    background: #444 !important;
+    background: #fff !important;
 }
+
+[data-sibebarbg="color_3"] .deznav .metismenu > li > a {
+    color: #444;
+}
+[data-sibebarbg="color_3"] .deznav .metismenu a {
+    color: #444;
+}
+[data-sibebarbg="color_3"][data-theme-version="dark"] .deznav .metismenu > li:hover > a, [data-sibebarbg="color_3"][data-theme-version="dark"] .deznav .metismenu > li:focus > a, [data-sibebarbg="color_3"][data-theme-version="dark"] .deznav .metismenu > li.mm-active > a, [data-sibebarbg="color_3"] .deznav .metismenu > li:hover > a, [data-sibebarbg="color_3"] .deznav .metismenu > li:focus > a, [data-sibebarbg="color_3"] .deznav .metismenu > li.mm-active > a {
+    color: #fff;
+}
+
+
 [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a i {
     color: #fff;
 }
 [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a {
-    background: #444;
+    background: #666;
     color: #fff;
     box-shadow: 4px 0px 1px 0 rgb(129 122 125 / 13%);
 }
-[data-sibebarbg="color_3"] .deznav .metismenu > li > a {
-    color: #999;
-}
-[data-sibebarbg="color_3"] .deznav .metismenu a {
-    color: #999;
-}
 [data-sibebarbg="color_3"] .deznav .metismenu a.mm-active {
-    color: #fff;
-    background: #333;
+    color: #444;
+    background: #f1f1f1;
 }
 [data-sibebarbg="color_3"] .deznav .metismenu a:hover {
-    color: #444;
-    background-color: #fff;
+    color: #fff;
+    background-color: #666;
 }
 [data-sibebarbg="color_3"] .deznav .metismenu > li > a:hover {
-    color: #444;
+    color: #fff;
 }
 [data-headerbg="color_1"] .nav-header .hamburger .line {
-    background: #fff !important;
-     color: #444;
+    background: #666 !important;
+     color: #fff;
 }
 #main-wrapper .header{
-    background-color: #333;
+    background-color: #f3f3f3;
 }
 #main-wrapper .header .header-left .header_bar{
-    background-color: #222;
+    background-color: #fff;
 }
 #main-wrapper .header .header-left .header_bar .office_name{
-  color: #fff;
+  color: #444;
 }
 #main-wrapper .header .header-left .header_bar .licene_no{
-  color: #fff;
+  color: #444;
 }
 #main-wrapper .header .current_time{
-  color: #fff;
-  background-color: #444;
+  color: #444;
+  background-color: #f3f3f3;
 }
 #main-wrapper .header .header-left .header_bar .doc_num{
-  color: #fff;
+  color: #444;
 }
 
 #main-wrapper .header .header-right .header-info .user_name{
-  color: #fff;
+  color: #444;
 }
 
 #main-wrapper .header .header-right .header-info #ourTime{
-  color: #fff;
+  color: #444;
 }
 .page-titles {
-    padding: 0.9375rem 1.25rem;
-    background: #222;
-    margin-bottom: 30px;
-    border-radius: 5px;
+    background: #f4f4f4;
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: 500;
-    color: #b5b5b5;
+.deposit_sum{
+    background: #fff;
 }
 .card_line{
-    background-color: #333;
-    border: 1px solid #333;
+    background-color: #fff;
+    border: 1px solid #fff;
 }
 .card_headline{
-    background-color: #222;
-    border-color: #555;
+    background-color: #ddd;
+    border-color: #999;
 }
 .card_headline .headline{
-    color: #fff;
-}
-.new-arrival-content.pr span{
-    color: #999;
+    color: #333;
 }
 .mybtn .submitbtn{
-    background: #222;
-    color: #999;
+    background: gray;
+    color: #fff;
     border: none;
     border-radius: 5px;
 }
 .mybtn .submitbtn:hover{
-    background: #111;
-    color: #fff;
+    background: #ddd;
+    color: #666;
 }
 .mybtn button{
-    background: #fff;
-    color: #222;
-}
-.mybtn button:hover{
-    background: #000;
+    background: gray;
     color: #fff;
 }
+.mybtn button:hover{
+    background: #ddd;
+    color: #666;
+}
 .inline_setup {
-    border-top: 1px solid #444;
-    border-left: 1px solid #444;
-    border-right: 1px solid #444;
-    border-bottom: 1px solid #444;
-    background: #444;
     color: #999;
-    border: none;
     border-radius: 5px;
 }
+input[type='text']{
+    box-shadow: 0 0 0 0;
+    box-sizing: border-box;
+}
 .select2-container--default {
-    border-top: 1px solid #222;
-    border-left: 1px solid #222;
-    border-right: 1px solid #222;
-    border-bottom: 1px solid #222;
     border-radius: 5px;
 }
 #example thead tr th, #example2 thead tr th, #example3 thead tr th, #example4 thead tr th, #example5 thead tr th{
-    background: #222;
-    color: #999;
+    background: #ddd;
+    color: #444;
 }
 #example, #example2, #example3, #example4, #example5 {
-    color: #999;
+/*     color: #fff; */
 /*     background: #333; */
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.previous, .dataTables_wrapper .dataTables_paginate .paginate_button.next {
-    background: #555;
+    background: #777;
 }
-#example tr:nth-child(2n+1) td, #example2 tr:nth-child(2n+1) td, #example3 tr:nth-child(2n+1) td, #example4 tr:nth-child(2n+1) td, #example5 tr:nth-child(2n+1) td {
-    background: #444 !important;
+/* #example tr:nth-child(2n+1) td, #example2 tr:nth-child(2n+1) td, #example3 tr:nth-child(2n+1) td, #example4 tr:nth-child(2n+1) td, #example5 tr:nth-child(2n+1) td {
+    background: #999 !important;
     color: #fff;
-}
+} */
 file-tab .nav-item .nav-link:hover, .profile-tab .nav-item .nav-link.active {
-    background: #444;
-    border-bottom: 0.2px solid #444;
-    color: #999;
+    background: #fff;
+    border-bottom: 0.2px solid #fff;
+    color: #444;
 }
 .profile-tab .custom-tab-1 ul li a.active {
     background-color: #444;
@@ -202,24 +195,24 @@ file-tab .nav-item .nav-link:hover, .profile-tab .nav-item .nav-link.active {
     color: #444;
 }
 .basic_headline{
-    border: 1px solid #444;
-    background: #222;
+    border: 1px solid #999;
+    background: #999;
     color: #fff;
 }
 .basic_headline:hover{
-  background: #fff;
-  color: #222;
+  background: #ddd;
+  color: #666;
 }
 .tranprint{
-    background-color: #222;
+    background-color: #999;
     color: #fff;
 }
 .tranprint:hover{
-  background: #fff;
-    color: #222;
+  background: #ddd;
+    color: #666;
 }
 .img_new{
-  border: 1px solid #666;
+  border: 1px solid #999;
 }
 .dashbtn{
   color: #555;
@@ -232,23 +225,23 @@ file-tab .nav-item .nav-link:hover, .profile-tab .nav-item .nav-link.active {
   color: #555;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover {
-    background: #222;
+    background: #666;
     color: #fff !important;
 }
 .datasearch{
   border: 1px solid #666;
 }
 .transaction{
-    background-color: #222;
+    background-color: #666;
     color: #fff;
 }
 .user_activity{
   color: #fff;
-  background-color: #222;
+  background-color: #666;
 }
 
 [data-sibebarbg="color_3"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu li > ul, [data-sibebarbg="color_3"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li.mm-active > a, [data-sibebarbg="color_3"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li:hover > a {
-    background-color: #555;
+    background-color: #999;
 }
 
 input[type='radio']:after {
@@ -262,7 +255,7 @@ input[type='radio']:after {
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid #fff;
+    border: 2px solid #999;
 }
 
 input[type='radio']:checked:after {
@@ -272,11 +265,11 @@ input[type='radio']:checked:after {
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #000;
+    background-color: #444;
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid #000;
+    border: 2px solid #999;
 }
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;
@@ -284,18 +277,20 @@ input[type='radio']:checked:after {
 }
 .dashboard_area{}
 .dashboard_area .das_headeing {
-    background-color: #333;
+    background-color: #999;
 }
 .dashboard_area .welcome_area{
-  background-color: #555;
+  background-color: #ddd;
 }
-
+.dashboard_area .welcome_area h4{
+  color: #666;
+}
 .dashboard_area .welcome_content{
   color: #999;
 }
 
 .footer {
-    background-color: #333;
+    background-color: #ddd;
 }
 .footer .copyright {
     color: #999;
@@ -309,14 +304,14 @@ input[type='radio']:checked:after {
 }
 
 [data-sibebarbg="color_3"][data-theme-version="dark"][data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a, [data-sibebarbg="color_3"][data-theme-version="dark"][data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu > li:hover > a, [data-sibebarbg="color_3"][data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a, [data-sibebarbg="color_3"][data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu > li:hover > a {
-    background-color: #555;
+    background-color: #666;
 }
 [data-sibebarbg="color_3"][data-theme-version="dark"][data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu li > ul, [data-sibebarbg="color_3"][data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu li > ul {
-    background-color: #555;
+    background-color: #666;
 }
 @media only screen and (min-width: 768px) {
     [data-sidebar-style="mini"][data-layout="vertical"] .deznav .metismenu > li.mm-active > a {
-        background: #555;
+        background: #666;
         color: #fff;
     }
 }

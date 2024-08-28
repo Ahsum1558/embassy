@@ -113,6 +113,7 @@ php artisan make:enum Enums/GenderType --string
 php artisan make:enum ApplicationStatus --string
 php artisan make:enum StatusEnum --string
 php artisan make:enum PermissionGroup --string
+php artisan make:enum PermissionEnum --string
 php artisan make:enum RoleEnum --string
 
 UniqueEmailForUser
@@ -273,6 +274,6 @@ git branch -D copy-branch
 git branch
 
 git add .
-git commit -m "Theme Setup Updated"
+git commit -m "New Theme Setup Added"
 git push -u origin main
 

@@ -1,9 +1,11 @@
 @php
     $id = Auth::guard('super')->user()->id;
     $superData = App\Models\Super::find($id);
-
     $themes = [
         'default' => 'default.css',
+        'dark' => 'dark.css',
+        'gray' => 'gray.css',
+        'bright' => 'bright.css',
         'pink' => 'pink.css',
         'blue' => 'blue.css',
         'blue_light' => 'blue_light.css',
@@ -11,7 +13,6 @@
         'green' => 'green.css',
         'purple' => 'purple.css',
         'violet' => 'violet.css',
-        'dark' => 'dark.css',
         'mint' => 'mint.css',
     ];
     $themeCss = $themes[$superData->theme] ?? $themes['default'];

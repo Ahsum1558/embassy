@@ -190,8 +190,12 @@
 	font-weight: 600;
 	background: #DD2F6E;
 	color: #fff;
-	padding: 10px 15px;
+	padding: 12px;
   width: auto;
+  align-content: center;
+  margin-right: 5px;
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 7%);
+  height: auto;
 }
 .mybtn .submitbtn:hover{
 	background: #e8850df2;
