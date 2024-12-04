@@ -237,3 +237,24 @@ input[type='radio']:checked:after {
 .dashboard_area .welcome_content{
   color: #b5104b;
 }
+.slider_area{
+  border: 1px solid #DD2F6E;
+  box-shadow: 3px 2px 4px 1px #DD2F6E;
+}
+.slider_option{
+  background: #DD2F6E;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.78);
+}
+.slider_head{
+  color: #fff;
+}
+.slider_head:hover{
+  color: #cbffcb;
+}
+.slider_text{
+  color: #cbffcb;
+}
+.slider_text:hover{
+  color: #fff;
+}

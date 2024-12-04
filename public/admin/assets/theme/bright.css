@@ -66,7 +66,7 @@ img.logo-abbr {
      color: #fff;
 }
 #main-wrapper .header{
-    background-color: #f3f3f3;
+    background-color: #ddd;
 }
 #main-wrapper .header .header-left .header_bar{
     background-color: #fff;
@@ -314,4 +314,25 @@ input[type='radio']:checked:after {
         background: #666;
         color: #fff;
     }
+}
+.slider_area{
+  border: 1px solid #ddd;
+  box-shadow: 3px 2px 4px 1px #ddd;
+}
+.slider_option{
+  background: #ddd;
+  color: #222;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.78);
+}
+.slider_head{
+  color: #222;
+}
+.slider_head:hover{
+  color: #999;
+}
+.slider_text{
+  color: #222;
+}
+.slider_text:hover{
+  color: #999;
 }

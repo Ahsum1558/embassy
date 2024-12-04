@@ -56,10 +56,16 @@ php artisan make:resource UserResource
 php artisan ui bootstrap --auth
 
 
+
 composer create-project laravel/laravel authNew
 composer require laravel/breeze --dev
 php artisan breeze:install
 php artisan make:model Admin -m
+php artisan make:model Category -m
+php artisan make:model SubCategory -m
+php artisan make:model Blog -m
+php artisan make:model Tag -m
+
 php artisan make:model Attachment -m
 php artisan make:middleware Admin
 php artisan make:seeder AdminsTableSeeder
@@ -71,11 +77,15 @@ $table->string('group_name')->nullable();
 
 php artisan make:controller Admin/AdminLoginController --resource
 php artisan make:controller Admin/AdminController --resource
+php artisan make:controller Admin/BlogController --resource
+php artisan make:controller Admin/TagController --resource
 php artisan make:controller Admin/Authorization/AdminPermissionController --resource
 php artisan make:controller Admin/Authorization/AdminRoleController --resource
 php artisan make:controller Admin/Authorization/AdminUserController --resource
 php artisan make:controller Admin/Authorization/AdminProfileController --resource
 php artisan make:controller Admin/AdminThemeController --resource
+php artisan make:controller Admin/CategoryController --resource
+php artisan make:controller Admin/SubCategoryController --resource
 
 php artisan make:request AssignRoleRequest
 
@@ -102,7 +112,12 @@ php artisan make:request Admin/ProfileRequest
 php artisan make:request Admin/PasswordRequest
 php artisan make:request Admin/EmailRequest
 php artisan make:request Admin/UsernameRequest
+php artisan make:request Admin/CategoryRequest
+php artisan make:request Admin/SubCategoryRequest
+php artisan make:request Admin/BlogRequest
+php artisan make:request Admin/TagRequest
 
+ 
 mkdir -p app/Http/Controllers/Admin/API
 php artisan make:model Attachment -m
 
@@ -118,6 +133,7 @@ php artisan make:enum RoleEnum --string
 
 UniqueEmailForUser
 UniqueUser
+UniqueCategory
 php artisan cache:table
 php artisan make:command AdminConstant
 php artisan make:constant MasterConstant
@@ -129,7 +145,8 @@ New-Item -Path "FileManageHelper.php" -ItemType "File"
 
 mkdir -p resources/fonts
 
-
+$('#overlay .loader').show();  
+$('#overlay .loader').hide();
 
 
 php artisan optimize
